@@ -14,7 +14,6 @@ body {
 		border-right-width: $desktopPaddingWidth;
 		border-left-width: $desktopPaddingWidth;
 		border-style: solid;
-
 		border-color: darken(gray, 30%);
 	}
 	.SkeletonContainer {
@@ -23,7 +22,6 @@ body {
 		border-right-width: $desktopPaddingWidth;
 		border-left-width: $desktopPaddingWidth;
 		border-style: solid;
-
 		border-color: darken(gray, 30%);
 		//@include grayscale-brand-colors("border-color");
 	}
@@ -62,9 +60,10 @@ square {
 	}
 	& > a:before {
 		content: "□";
-		vertical-align: sub;
+		vertical-align: baseline;
 		margin-top: -4px;
 		font-size: 20px;
+		font-weight: 700;
 
 		@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: $desktopBreakpoint),
 			only screen and (min--moz-device-pixel-ratio: 2) and (max-width: $desktopBreakpoint),

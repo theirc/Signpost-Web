@@ -2,8 +2,8 @@ import React from "react";
 import { translate } from "react-i18next";
 import "./ArticleList.css";
 
-class ArticleList extends React.Component {   
-    
+class ArticleList extends React.Component {
+
 
     render() {
         const { category, onNavigate,  md} =this.props;
@@ -31,6 +31,7 @@ class ArticleList extends React.Component {
                                     <p dangerouslySetInnerHTML={{ __html: md.render(article.fields.lead)}} />
                                 </div>
                                 <s className="Read-More">
+                                  <span className="sqware"></span>
                                     <a href="#">Read More</a>
                                 </s>
                             </div>,

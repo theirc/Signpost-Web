@@ -57,4 +57,13 @@
     }
   }
 
+  .navshowoff-enter {
+    transform: translateX(-100%);
+  }
+
+  .navshowoff-enter-active {
+    transition: .5 ease-in all;
+  }
+
+
 }

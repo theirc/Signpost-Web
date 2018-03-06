@@ -23,16 +23,18 @@ class BottomNavContainer extends React.Component {
 	componentWillMount() {}
 
 	render() {
-		const { country, onGoToCategories, onGoHome, onGoToSearch, showServiceMap, onGoToServices, router } = this.props;
+		const { country, onGoToCategories, onGoHome, onGoToSearch, showServiceMap, onGoToServices, goToMap, router } = this.props;
+
+
 
 		let pathParts = router.location.pathname.split("/");
 		let selectedIndex = 0;
 		if (pathParts.length > 2) {
 			if (pathParts[2] === "article") {
 				selectedIndex = -1;
-			} else if (pathParts[2] === "search") {
-				selectedIndex = 2;
 			} else if (pathParts[2] === "services") {
+				selectedIndex = 2;
+			} else if (pathParts[3] === "map") {
 				selectedIndex = 3;
 			} else {
 				selectedIndex = 1;
@@ -48,12 +50,14 @@ class BottomNavContainer extends React.Component {
 				onGoHome={onGoHome.bind(null, country.fields.slug)}
 				onGoToSearch={onGoToSearch.bind(null, country.fields.slug)}
 				onGoToServices={onGoToServices.bind(null, country.fields.slug)}
+				goToMap={goToMap.bind(null, country.fields.slug)}
+
 			/>
 		);
 	}
 }
 
-const mapState = ({ category, country, showServiceMap, router }, p) => {
+const mapState = ({ category, country, showServiceMap, gotToMap, router }, p) => {
 	return {
 		category,
 		country,
@@ -63,8 +67,12 @@ const mapState = ({ category, country, showServiceMap, router }, p) => {
 };
 const mapDispatch = (d, p) => {
 	return {
+
 		onGoToCategories: country => {
 			d(push(`/${country}/categories`));
+		},
+		goToMap: country => {
+			d(push(`/${country}/services/map/`));
 		},
 		onGoHome: country => {
 			d(push(`/${country}`));
