@@ -51,7 +51,7 @@ export default class ArticlePage extends Component {
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج العفو</title>
                 </Helmet>
 				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-                
+
                 <div id="timestamp">
                     Last updated: 4/19/18
                 </div>
@@ -90,8 +90,6 @@ export default class ArticlePage extends Component {
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
 
                     </div>
-
-                    
 
                 </article>
             </div>
