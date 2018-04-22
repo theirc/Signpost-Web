@@ -164,3 +164,16 @@
 		}
 	}
 }
+.slider{
+	.container{
+		padding: 10px;
+	}
+	img{
+		width: 80%;
+		padding-right: 5%;
+	}
+	.slider-title{
+		text-decoration: none;
+		text-overflow: ellipsis;
+	}
+}

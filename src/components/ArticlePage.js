@@ -15,6 +15,8 @@ import AudioPlayer from './AudioPlayer';
 
 import JsxParser from 'react-jsx-parser'
 import ShareArticleWidget from './ShareArticleWidget';
+import Slider from "react-slick";
+
 const Remarkable = require("remarkable");
 
 const md = new Remarkable("full", {
@@ -143,7 +145,14 @@ export default class ArticlePage extends Component {
         });
         html = html.replace(/(<FacebookPlayer.*\/>)/gmi, (a) => {
             return `<div class="fb">${a}</div>`;
-        });
+		});
+		let settings = {
+			dots: false,
+			infinite: true,
+			speed: 500,
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  };
 
         return (
             <div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}>
@@ -156,6 +165,21 @@ export default class ArticlePage extends Component {
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
+				<h2>Related</h2>
+				<Slider {...settings} className="slider">
+					<div className="container">
+						<a href="#"><h4 class="slider-title">First Article Title</h4></a>
+						<img src="/images/related/example1.jpg" />
+					</div>
+					<div className="container">
+						<a href="#"><h4 class="slider-title">Second Article Title</h4></a>
+						<img src="/images/related/example2.jpg" />
+					</div>									
+					<div className="container">
+						<a href="#"><h4 class="slider-title">Third Article Title</h4></a>
+						<img src="/images/related/example3.jpg"/>
+					</div>
+				</Slider>
 			</div>
         );
     }
