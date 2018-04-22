@@ -1,6 +1,9 @@
 @import "../shared/includes.scss";
 
 .BottomNav {
+	@include bottomNav-color( 'background-color');
+	box-shadow: 0px 1px 10px 1px;
+
 	.rtl & span {
 		font-size: 12px;
 	}
@@ -8,15 +11,15 @@
 		.rtl & {
 			font-family: "Cairo", sans-serif;
 		}
-		@include darken-brand-colors( "color", 5%);
+		@include brand-colors-inverse( "color");
 	}
 
 	.Selected > span > span {
 		.rtl & {
 			font-family: "Cairo", sans-serif;
 		}
-		color: black;
-		font-weight: 700;
+		@include brand-colors-inverse( "color");
+		font-weight: 100;
 	}
 	& > div > button > span > svg {
 		.rtl & {

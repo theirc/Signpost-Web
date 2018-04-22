@@ -33,21 +33,21 @@ Less me
   @media (max-width: $desktopBreakpoint) {
     &.logo {
       .rtl & {
-        padding-right: 18px;
+        padding-right: 0px;
       }
 
       .ltr & {
-        padding-left: 18px;
+        padding-left: 0px;
       }
     }
 
     &.buttons {
       .ltr & {
-        padding-right: 18px;
+        padding-right: 14px;
       }
 
       .rtl & {
-        padding-left: 18px;
+        padding-left: 14px;
       }
     }
   }
@@ -81,7 +81,7 @@ Less me
 }
 
 .app-bar-logo {
-  height: 40px;
+  height: 70px;
 }
 
 .headroom {
