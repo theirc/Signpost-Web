@@ -97,7 +97,8 @@
 		@include brand-colors("border-color");
 	}
 
-	#timestamp * {
+	#timestamp {
+		padding-top: 5px;
         font-size: 11px;
         font-style: italic;
         position: relative;

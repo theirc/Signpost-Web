@@ -50,7 +50,7 @@ export default class ArticlePage extends Component {
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج العفو</title>
                 </Helmet>
                 <div id="timestamp">
-                <p>Last updated: 4/19/18</p>
+                    Last updated: 4/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>

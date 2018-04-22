@@ -1,6 +1,9 @@
 @import "../shared/includes.scss";
 
 .ArticlePage {
+    #timestamp{
+        margin: 0;
+    }
     h1{
         font-size:20px;
         margin: 0px;
