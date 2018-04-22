@@ -11,6 +11,7 @@ import FacebookPlayer from "react-facebook-player";
 import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
 import AudioPlayer from './AudioPlayer';
+import Slider from "react-slick";
 import ShareArticleWidget from './ShareArticleWidget';
 
 const Remarkable = require("remarkable");
@@ -43,14 +44,25 @@ export default class ArticlePage extends Component {
         }
         return null;
     }
-    render() {
+    
 
+    render() {
+        let settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          };
         return (
             <div className="ArticlePage">
-					<Helmet>
-			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج العفو</title>
+
+				<Helmet>
+			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
-				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
+                <ShareArticleWidget language={this.language} direction={this.direction} />
+					<Helmet>
+			   
 
                 <div id="timestamp">
                     Last updated: 4/19/18
@@ -92,6 +104,29 @@ export default class ArticlePage extends Component {
                     </div>
 
                 </article>
+                <Slider {...settings} className="slider">
+					<div className="container">
+						<img src="/images/related/example1.jpg" />
+						<div className="slide-content">
+							<a href="#"><h4 class="slider-title">First Article Title</h4></a>							
+							<h5>14 hours ago</h5>
+						</div>
+					</div>
+					<div className="container">
+						<img src="/images/related/example2.jpg" />
+						<div className="slide-content">
+							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
+							<h5>2 days ago</h5>
+						</div>
+					</div>									
+					<div className="container">
+						<img src="/images/related/example3.jpg"/>
+						<div className="slide-content">
+							<h4 class="slider-title">Third Article Title</h4>		
+							<h5>6 hours ago</h5>
+						</div>				
+					</div>
+				</Slider>
             </div>
         );
     }
