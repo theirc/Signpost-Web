@@ -1,0 +1,47 @@
+@import "../shared/includes.scss";
+
+.ArticlePage {
+    #timestamp{
+        margin: 0;
+    }
+    h1{
+        font-size:20px;
+        margin: 0px;
+        padding:0px;
+    }
+
+    #topthird p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #topthird * {
+        padding-right: 10px;
+    }
+
+    #tldr {
+        padding-right: 30px;
+    }
+
+    #tldr li{
+        padding: 0px;
+    }
+
+    #maincontent{
+        padding: 15px;
+    }
+
+    #maincontent ul{
+        padding-right: 25px;
+    }
+
+    #audio{
+        margin-right: 15px;
+        padding:0px;
+    }
+
+    article{
+        font-size: 12px;
+    }
+
+}
