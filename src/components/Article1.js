@@ -101,8 +101,6 @@ export default class ArticlePage extends Component {
                     </div>
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
 
-                    </div>
-
                 </article>
                 <Slider {...settings} className="slider">
 					<div className="container">
