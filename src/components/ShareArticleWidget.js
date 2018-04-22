@@ -67,7 +67,7 @@ class ShareArticleWidget extends Component {
 						</div>					
 					:
 					<div className="selector sharePage">
-						<h1 onClick={() => window.open('whatsapp://send?text="'+this.state.value+'" data-action="'+this.state.value+'"')}>{t("Share on Whatsapp")}</h1>
+						<h1 onClick={() => window.open('whatsapp://send?text='+encodeURIComponent(this.state.value))}>{t("Share on Whatsapp")}</h1>
 						<i className="MenuIcon fa fa-whatsapp" aria-hidden="true" />						
 						<div className="share-bar-separator" />
 						<h1 onClick={() => this.share()}>{t("Share on Facebook")}</h1>
