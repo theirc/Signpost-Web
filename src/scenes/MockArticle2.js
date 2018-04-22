@@ -5,7 +5,7 @@ import {
 import {
     ArticleFooter,
 } from "../components";
-import Article1 from "../components/Article1";
+import Article2 from "../components/Article2";
 import PropTypes from "prop-types";
 import {
     actions
@@ -81,7 +81,7 @@ class Article extends React.Component {
 
         return (
             <Placeholder>
-				<Article1 language={language} direction={direction} />
+				<Article2 language={language} direction={direction} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
         );

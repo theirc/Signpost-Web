@@ -1,6 +1,9 @@
 @import "../shared/includes.scss";
 
 .ArticlePage {
+    #timestamp{
+        margin: 0;
+    }
     h1{
         font-size:20px;
         margin: 0px;
@@ -34,11 +37,11 @@
 
     #audio{
         margin-right: 15px;
-        padding-bottom:5px;
+        padding:0px;
     }
 
-    #article-container{
-      padding: 40px;
+    article{
+        font-size: 12px;
     }
 
 }
