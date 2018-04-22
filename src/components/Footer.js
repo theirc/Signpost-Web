@@ -44,9 +44,8 @@ class Footer extends Component {
 					{deviceType === "Android" && <img src={`/google-play-badge.png`} className="app-store-logo" alt="Get it on Google Play" />}
 					{deviceType === "iPhone" && <img src={`/app-store-badge.svg`} className="app-store-logo" alt="Get it on the App Store" />}
 				*/}
-					<span className="padded Signpost" style={{ direction: "ltr" }}>
-						<span>{t("Part of the ")}</span>
-						<a href="http://signpost.ngo">Signpost Project</a> &copy; <span>{year}</span>.
+					<span className="padded Signpost" style={{ direction: "ltr" }}>						
+						<span>{t("Powered by The International Rescue Committee and with partners. Copyleft 2018")}</span>						
 					</span>
 					<div style={{ display: "none" }} onClick={onChangeLanguage}>
 						<div className="icon-container">

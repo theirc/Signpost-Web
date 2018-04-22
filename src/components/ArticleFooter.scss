@@ -79,3 +79,18 @@
 		transition: display 2s ease-in-out;
 	}
 }
+.share-bar-separator {
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-left-style: solid;
+	height: 35px;
+  }
+.MenuIcon {
+	padding-right: 10px;
+	padding-left: 10px;
+
+	font-size: 20px;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+}

@@ -167,6 +167,8 @@ export default {
 			"Click here to find services in the location selected": "انقر هنا لمعرفة الخدمات في الموقع المحدد",
 			Categories: "الاقسام",
 			"Share this page": "شارك هذه الصفحة",
+			"Share on Whatsapp": "شارك على whatsapp",
+			"Share on Facebook": "أنشرها على الفيسبوك",
 			List: "قائمة",
 			"Languages spoken": "اللغات المستخدمة",
 			"View info for": "عرض المعلومـات الخاصة بـ",
