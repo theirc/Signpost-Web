@@ -87,6 +87,7 @@
 		}
 		.rtl & {
 			margin-right: 0;
+			padding: 0;
 		}
 
 		color: #000000;
@@ -96,6 +97,13 @@
 		@include brand-colors("border-color");
 	}
 
+	#timestamp * {
+        font-size: 11px;
+        font-style: italic;
+        position: relative;
+		right: 200px;
+	}
+	
 	.title {
 		width: 100%;
 		display: flex;
@@ -107,7 +115,7 @@
 	}
 
 	.title > h1 {
-		font-size: 18px;
+		font-size: 15px;
 		display: block;
 		width: 100%;
 		margin: 0;
@@ -122,7 +130,8 @@
 	}
 
 	article {
-		padding: 5px;
+		padding: 0px !important;
+		margin: 0 !important;
 	}
 
 	.hero {
@@ -137,8 +146,8 @@
 	}
 
 	article {
-		margin-left: 5px;
-		margin-right: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
 
 		img {
 			max-width: 100%;
