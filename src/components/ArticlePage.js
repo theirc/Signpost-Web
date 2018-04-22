@@ -14,6 +14,7 @@ import ReactDOM from "react-dom"
 import AudioPlayer from './AudioPlayer';
 
 import JsxParser from 'react-jsx-parser'
+import ShareArticleWidget from './ShareArticleWidget';
 const Remarkable = require("remarkable");
 
 const md = new Remarkable("full", {
@@ -161,7 +162,8 @@ export default class ArticlePage extends Component {
 						</div>
 					)}
 				{contentType.sys.id === "video" && this.renderVideo()}
-				<article>
+				<ShareArticleWidget language={this.language} direction={this.direction} />
+				<article>					
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
