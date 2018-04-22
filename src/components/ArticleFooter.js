@@ -54,6 +54,7 @@ class ArticleFooter extends Component {
 		const { language } = this.props;
 
 		if (global.window) {
+			console.log(global.window);
 			const { FB } = global.window;
 			let { href } = window.location;
 			href += (href.indexOf("?") > -1 ? "&" : "?") + "language=" + language;
