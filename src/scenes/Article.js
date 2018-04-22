@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { ArticlePage, ArticleFooter } from "../components";
+import { ArticlePage, ArticleFooter,  } from "../components";
 import PropTypes from "prop-types";
 import { actions } from "../store";
 import { push } from "react-router-redux";

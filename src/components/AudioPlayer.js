@@ -1,19 +1,22 @@
 import React from "react";
-import { translate } from "react-i18next";
+import {
+    translate
+} from "react-i18next";
 import "./AudioPlayer.css";
 
 import ReactAudioPlayer from 'react-audio-player';
 
-
-class AudioPlayer extends React.Component {   
+class AudioPlayer extends React.Component {
     render() {
-        const {  url } =this.props;
+        const {
+            url
+        } = this.props;
         return (
+            <div><i className="material-icons">volume_up</i>
             <ReactAudioPlayer
-            src="my_audio_file.ogg"
-            autoPlay
-            controls
-          />
+            src="/audio/background.ogg"
+            />
+            </div>
         )
     }
 }

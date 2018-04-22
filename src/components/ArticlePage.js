@@ -7,6 +7,7 @@ import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
 import ReactDOMServer from "react-dom/server"
 import ReactDOM from "react-dom"
+import AudioPlayer from './AudioPlayer';
 
 import JsxParser from 'react-jsx-parser'
 const Remarkable = require("remarkable");
@@ -141,6 +142,7 @@ export default class ArticlePage extends Component {
 					)}
 				{contentType.sys.id === "video" && this.renderVideo()}
 				<article>
+					<AudioPlayer />
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
 			</div>
