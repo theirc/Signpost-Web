@@ -1,11 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import { ArticlePage, ArticleFooter } from "../components";
+import { ArticlePage, ArticleFooter,  } from "../components";
 import PropTypes from "prop-types";
 import { actions } from "../store";
 import { push } from "react-router-redux";
 import Placeholder from "../shared/placeholder";
 import _ from "lodash";
+import RelatedArticleContainer from "../containers/RelatedArticleContainer";
 const Promise = require("bluebird");
 
 class Article extends React.Component {
@@ -76,6 +77,7 @@ class Article extends React.Component {
 		return (
 			<Placeholder>
 				<ArticlePage key={"Article"} direction={direction} category={category} other={other} article={article} loading={loading} onNavigate={onNavigate} />
+				<RelatedArticleContainer articles={category.fields.article} />
 				<ArticleFooter key={"ArticleFooter"} onNavigateTo={onNavigateTo(category, country)} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
 		);
