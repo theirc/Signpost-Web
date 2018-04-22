@@ -1,14 +1,8 @@
 import getSessionStorage from "../shared/sessionStorage";
-import cms from "./cms";
-
 var request = require("superagent");
 var Promise = require("bluebird");
 var _ = require("lodash");
-var {siteConfig} = cms;
 var RI_URL = "https://admin.refugee.info/e/production/v2";
-if (siteConfig && siteConfig.backendUrl) {
-	RI_URL = siteConfig.backendUrl;
-}
 console.log(RI_URL,);
 
 module.exports = {
