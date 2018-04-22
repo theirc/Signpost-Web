@@ -160,6 +160,9 @@ const getFirsLevel = (slug, selectedLanguage) => {
 // Host the public folder
 app.get("/", mainRequest({}));
 app.use("/", feathers.static("build"));
+app.get("/:country/mock/article1", mainRequest({}));
+app.get("/:country/mock/article2", mainRequest({}));
+app.get("/:country/mock/service-listing", mainRequest({}));
 app.get("/preview/:serviceId/", function (req, res, err) {
 	const selectedLanguage = parseLanguage(req);
 	const {
