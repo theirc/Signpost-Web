@@ -18,7 +18,7 @@ for (let key of Object.keys(config)) {
 }
 
 if (!client) {
-	siteConfig = config["refugee.info"];
+	siteConfig = config[Object.keys(config)[0]];
 	client = contentful.createClient({
 		...siteConfig,
 	});

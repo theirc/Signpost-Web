@@ -20,14 +20,10 @@ const nunjucks = require("nunjucks");
 const conf = require("../content/config");
 const servicesApi = require("../content/servicesApi");
 const cmsApi = require("../content/cmsApi").default;
-const ReactApp = require("../App").default;
 
 const React = require("react");
 const renderToString = require("react-dom/server").renderToString;
-const {
-	store,
-	history
-} = require("../store");
+
 const Provider = require("react-redux").Provider;
 const _ = require("lodash");
 const toMarkdown = require("to-markdown");
