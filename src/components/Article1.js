@@ -65,11 +65,11 @@ export default class ArticlePage extends Component {
                                     <li> في 4 آذار (مارس) 2018، أعلنت وزارة الداخلية الأردنية ومفوضيّة اللاجئين (UNHCR) عن برنامج لمساعدة اللاجئين الذين يعيشون بشكل غير رسمي في المناطق المدنيّة ويهدف هذا البرنامج إلى تسوية وضعهم.</li>
                                     <li>  ومنذ ذلك الحين ووفقاً لمفوضيّة اللاجئين، تواصل أكثر من 31,000 لاجئ مع مفوضيّة اللاجئين واستفاد أكثر من 10,000 منهم من هذا البرنامج. </li>
                                     <li> يمكنك مشاهدة فيديو مفوضيّة اللاجئين على الفيسبوك:
-                                    {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2128367340513560/")}
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2128367340513560/")}
 
                     <div id="maincontent">
                         <b>
