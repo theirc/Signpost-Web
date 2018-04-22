@@ -158,17 +158,17 @@ export default class ArticlePage extends Component {
             <div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}>
 				<Helmet>
 					<title>{title}</title>
-<<<<<<< HEAD
+
 				</Helmet>
 				<ShareArticleWidget language={this.language} direction={this.direction} />
 
 				<article>
-=======
-				</Helmet>	
+
+				</Helmet>
 				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-				
-				<article>					
->>>>>>> 536428f4422e9532122d70a42ca57c92e8b87640
+
+				<article>
+
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
