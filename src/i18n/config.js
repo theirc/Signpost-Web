@@ -167,7 +167,7 @@ export default {
 			"Click here to find services in the location selected": "انقر هنا لمعرفة الخدمات في الموقع المحدد",
 			Categories: "الاقسام",
 			"Share this page": "شارك هذه الصفحة",
-			"Share on Whatsapp": "شارك على whatsapp",
+			"Share on Whatsapp": "شارك على WhatsApp",
 			"Share on Facebook": "أنشرها على الفيسبوك",
 			List: "قائمة",
 			"Languages spoken": "اللغات المستخدمة",
@@ -628,7 +628,8 @@ export default {
 			"Top Categories": "Top Categories",
 			"Local Guide": "Local Guide",
 			"Near me": "Near me",
-			"Near Me": "Near me",
+            "Near Me": "Near me",
+            "Share on Whatsapp": "Share on WhatsApp",
 			"Detect My Location": "Detect My Location",
 			LOCATION_DISCLAIMER:
 				"In order to detect your location, we need to request permission to do so on your device. If you would like to use GPS to find your information tap OK, if not tap Back to List",
