@@ -149,20 +149,9 @@ export default class ArticlePage extends Component {
             <div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}>
 				<Helmet>
 					<title>{title}</title>
-				</Helmet>
-				<HeaderBar subtitle={(category.fields.articles || []).length > 1 && `${category.fields.name}:`} title={title} />
-				{hero &&
-					hero.fields &&
-					hero.fields.file && (
-						<div>
-							<div className="hero">
-								<img src={hero.fields.file.url + "?fm=jpg&fl=progressive"} alt="" />
-							</div>
-							{hero.fields.description && <credit>{hero.fields.description}</credit>}
-						</div>
-					)}
-				{contentType.sys.id === "video" && this.renderVideo()}
+				</Helmet>	
 				<ShareArticleWidget language={this.language} direction={this.direction} />
+				
 				<article>					
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
