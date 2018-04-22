@@ -6,6 +6,7 @@ import { history } from "./store";
 import { Skeleton } from "./scenes";
 import { withCountry, withCategory } from "./shared/hoc";
 import Placeholder from "./shared/placeholder";
+import MockArticle1 from "./scenes/MockArticle1";
 
 class ScrollToTop extends Component {
 	componentDidUpdate(prevProps) {
@@ -57,6 +58,7 @@ class Router extends Component {
 									<Route exact path="/language-selector" component={LanguageSelectorScene} />
 									<Route exact path="/:country/search" component={withCountry(Search)} />
 									<Route exact path="/:country/categories" component={withCountry(Categories)} />
+									<Route exact path="/:country/mock/article1" component={withCountry(MockArticle1)} />
 									<Route path="/:country/:category/:article" component={withCountry(withCategory(Article))} />
 									<Route path="/:country/:category" component={withCountry(withCategory(CategoryHome))} />
 									<Route path="/:country" component={withCountry(CountryHome)} />

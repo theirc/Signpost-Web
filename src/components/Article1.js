@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React, {
+    Component
+} from "react";
 import PropTypes from "prop-types";
 import "./ArticlePage.css";
 import "./Article1.css";
-import { Helmet } from "react-helmet";
+import {
+    Helmet
+} from "react-helmet";
 import FacebookPlayer from "react-facebook-player";
 import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
@@ -10,10 +14,10 @@ import HeaderBar from "./HeaderBar";
 const Remarkable = require("remarkable");
 
 const md = new Remarkable("full", {
-	html: true,
-	linkify: true,
-	typographer: true,
-	breaks: true,
+    html: true,
+    linkify: true,
+    typographer: true,
+    breaks: true,
 });
 
 /**
@@ -22,31 +26,32 @@ const md = new Remarkable("full", {
 export default class ArticlePage extends Component {
 
     static contextTypes = {
-		config: PropTypes.object,
-	};
+        config: PropTypes.object,
+    };
     renderVideo(url) {
-		const APP_ID = this.context.config.appId;
+        const APP_ID = this.context.config.appId;
 
-		if (/facebook.com/.test(url)) {
-			let videoId = url.replace(/.*facebook.com\/.*\/videos\/(.*)\/.*/, "$1");
+        if (/facebook.com/.test(url)) {
+            let videoId = url.replace(/.*facebook.com\/.*\/videos\/(.*)\/.*/, "$1");
 
-			return <FacebookPlayer className={"Facebook"} videoId={videoId} appId={APP_ID} />;
-		} else if (/youtube.com/) {
-			let videoId = url.replace(/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, "$7");
-			return <YouTube videoId={videoId} className={"YouTube"} />;
-		}
-		return null;
-	}
+            return <FacebookPlayer style={{maxHeight: 100, }} className={"Facebook"} videoId={videoId} appId={APP_ID} />;
+        } else if (/youtube.com/) {
+            let videoId = url.replace(/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, "$7");
+            return <YouTube videoId={videoId} className={"YouTube"} />;
+        }
+        return null;
+    }
     render() {
 
-		return (
-			<div>
-                <div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}></div>
-		
+        return (
+            <div className="Article">
+					<Helmet>
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
+                </Helmet>
+				<HeaderBar subtitle={false} title={`الوضع القانوني لبعض اللاجئين السوريين غير المسجلين`} />
+                
                 <article>
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
-                    <h1>الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h1>
+                    <div>
                     <h2>كيف ممكن قدّم على برنامج العفو قبل انتهائه في شهر أيلول (سبتمبر)؟</h2>
                     <p>Posted 20 hours ago</p>
                     
@@ -58,7 +63,7 @@ export default class ArticlePage extends Component {
                         </ul>
                     </div>
 
-                    <img src="public/images/article1.png" alt="UNICEF Amnesty Program"></img>
+                    <img src="/images/article1.png" alt="UNICEF Amnesty Program"></img>
 
                     <div id="maincontent">
                         إذا كنت تعيش بدون وثائق قانونية، يمكن لبرنامج عفو جديد أن يساعدك في تسوية وضعك القانوني في الأردن -- بشرط أنّك لم تغادر المخيّم بشكل غير قانوني في أو بعد 1 يوليو 2017. <br/>
@@ -155,7 +160,7 @@ export default class ArticlePage extends Component {
                             ، بمساعدتك في تجنّب طوابير الانتظار. 
                         </p>
                         <p>هل شاهدت مقطع الفيديو الذي أعدّته مفوضيّة اللاجئين حول عمليّة التقديم؟ شاهده من هنا:</p>
-                        {renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
+                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
                         <b>شو لازم أعمل بعد هيك؟</b>
                         <div>
                             <p>بمجرّد حصولك على الوثائق الجديدة، ستتمكّن من الوصول والاستفادة من العديد من الخدمات، من ضمنها:</p>
@@ -172,8 +177,9 @@ export default class ArticlePage extends Component {
                         <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك</a>
                         أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن. ,</p> 
                     </div>
+                    </div>
                 </article>
             </div>
-	    );
-	}
+        );
+    }
 }
