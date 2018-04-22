@@ -23,7 +23,7 @@ export default class ArticlePage extends Component {
 	render() {
 
 		return (
-			<div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}>
+			<div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}></div>
 		
 					<title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
 				<article>
@@ -97,7 +97,8 @@ export default class ArticlePage extends Component {
                         <b>
                         لا يُمكنك
                         </b>
-                        
+                    </ul>
+
     
 				</article>
 			</div>
