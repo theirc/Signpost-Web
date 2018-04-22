@@ -88,11 +88,11 @@ export default class ArticlePage extends Component {
                         </b>
                     </div>
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
-<<<<<<< HEAD
+
                     </div>
-=======
+
                     
->>>>>>> 536428f4422e9532122d70a42ca57c92e8b87640
+
                 </article>
             </div>
         );
