@@ -253,7 +253,9 @@ export default {
 			"Back to List": "العودة إلى القائمة",
 			"Loading location": "تحميل الموقع",
 			LOCATION_ERROR: "عذراً، لا يمكن العثور على موقعك. الرجاء اختيار الموقع من القائمة",
-			OTHER_SERVICES: "خدمات أخرى متوفرة في هذا الموقع",
+            OTHER_SERVICES: "خدمات أخرى متوفرة في هذا الموقع",
+            "Copy Link": "نسخ الرابط",
+            "Copied": "منسوخ",
 		},
 	},
 	ur: {
