@@ -23,7 +23,7 @@ Less me
 	display: -webkit-flex;
 	display: -ms-flexbox;
   display: flex;
-  
+
 	color: white;
 	flex: 1;
 	flex-direction: row;
@@ -35,17 +35,17 @@ Less me
 			.rtl & {
         padding-right: 0px;
       }
-      
+
 			.ltr & {
         padding-left: 0px;
 			}
     }
-    
+
 		&.buttons {
 			.ltr & {
 				padding-right: 14px;
       }
-      
+
 			.rtl & {
 				padding-left: 14px;
 			}
@@ -96,7 +96,7 @@ Less me
 }
 
 .app-bar-logo {
-	height: 70px;
+	height: 80px;
 	cursor: pointer;
 }
 
@@ -145,7 +145,8 @@ Less me
 		padding-bottom: 1em;
 		padding-left: 16px;
 		padding-right: 16px;
-		background-color: black;
+		padding-top: 20px;
+		background-color: #19505b;
 
 		input {
 			-webkit-appearance: none;
@@ -154,7 +155,7 @@ Less me
 			width: 100%;
 			box-sizing: border-box;
 			border: 0;
-			background-color: black;
+			background-color: #19505b;
 			border-bottom: 2px white solid;
 			color: white;
 
@@ -167,7 +168,7 @@ Less me
 		.fa-times-circle {
 			margin-inline-start: -33px;
 			margin: 5px 5px;
-			top: 60px;
+			top: 80px;
 
 			.ltr & {
 				right: 35px;
@@ -178,7 +179,7 @@ Less me
 		}
 		.fa-search {
 			margin: 5px 5px;
-			top: 60px;
+			top: 70px;
 			.ltr & {
 				right: 5px;
 			}

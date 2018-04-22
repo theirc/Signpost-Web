@@ -56,12 +56,13 @@ export default class ArticlePage extends Component {
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
 
                     <article>
+                      <div id="article-ctn">
                         <div id= "topthird">
                             <h1>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h1>
                                 <p>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018</p>
-                        
+
                             <div id="tldr">
-                                <ul> 
+                                <ul>
                                     <li> في 4 آذار (مارس) 2018، أعلنت وزارة الداخلية الأردنية ومفوضيّة اللاجئين (UNHCR) عن برنامج لمساعدة اللاجئين الذين يعيشون بشكل غير رسمي في المناطق المدنيّة ويهدف هذا البرنامج إلى تسوية وضعهم.</li>
                                     <li>  ومنذ ذلك الحين ووفقاً لمفوضيّة اللاجئين، تواصل أكثر من 31,000 لاجئ مع مفوضيّة اللاجئين واستفاد أكثر من 10,000 منهم من هذا البرنامج. </li>
                                     <li> يمكنك مشاهدة فيديو مفوضيّة اللاجئين على الفيسبوك:
@@ -81,9 +82,10 @@ export default class ArticlePage extends Component {
                         </b>
                         <p><a href="/">برنامج مفوضيّة اللاجئين للعفو المخصص للاجئين غير المسجلين</a></p>
                         <b>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018.
-                        </b>    
+                        </b>
                     </div>
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
+                    </div>
                 </article>
             </div>
         );

@@ -158,19 +158,20 @@ export default class ArticlePage extends Component {
             <div ref={r => (this._ref = r)} className={["ArticlePage", loading ? "loading" : "loaded"].join(" ")}>
 				<Helmet>
 					<title>{title}</title>
-				</Helmet>	
+				</Helmet>
 				<ShareArticleWidget language={this.language} direction={this.direction} />
-				
-				<article>					
+
+				<article>
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
+        <div class="carousel">
 				<h3>Related Information</h3>
 				<Slider {...settings} className="slider">
 					<div className="container">
 						<img src="/images/related/example1.jpg" />
 						<div className="slide-content">
-							<a href="#"><h4 class="slider-title">First Article Title</h4></a>							
+							<a href="#"><h4 class="slider-title">First Article Title</h4></a>
 							<h5>14 hours ago</h5>
 						</div>
 					</div>
@@ -180,15 +181,16 @@ export default class ArticlePage extends Component {
 							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
 							<h5>2 days ago</h5>
 						</div>
-					</div>									
+					</div>
 					<div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
-							<h4 class="slider-title">Third Article Title</h4>		
+							<h4 class="slider-title">Third Article Title</h4>
 							<h5>6 hours ago</h5>
-						</div>				
+						</div>
 					</div>
 				</Slider>
+        </div>
 			</div>
         );
     }

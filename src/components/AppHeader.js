@@ -75,13 +75,13 @@ class AppHeader extends Component {
 											</span>
 										)}
 										{!disableLanguageSelector && !disableCountrySelector && <div className="app-bar-separator" />}
-										{!disableLanguageSelector && (
+										{ /* !disableLanguageSelector && (
 											<span className="app-bar-selectors" color="contrast" onClick={onChangeLanguage}>
 												{language || " "}
 											</span>
-										)}
+										)*/}
 
-										<div className="app-bar-separator" />
+										{/* <div className="app-bar-separator" />*/}
 										<IconButton
 											className={`search-close ${[this.state.search && "active"].join(" ")}`}
 											color="contrast"
