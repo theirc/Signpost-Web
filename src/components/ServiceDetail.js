@@ -48,6 +48,58 @@ class ServiceDetail extends React.Component {
 			fetchServicesInSameLocation().then(relatedServices => this.setState({ relatedServices }));
 		}
 	}
+	renderContactInformation(ci) {
+		let {text,type} = ci;
+		let typography;
+		let action;
+		let typeText;
+
+		switch(type){
+			case "whatsapp" :
+				typography = "MenuIcon fa fa-whatsapp";
+				action = "whatsapp://send?text=text";
+				typeText = "Whatsapp: ";
+			break;
+			case "skype" : 
+				typography = "MenuIcon fa fa-skype";
+				action = "${toUrl(text)";
+				typeText = "Skype: ";
+			break;
+			case "facebook_messenger" :
+				typography = "MenuIcon fa fa-facebook";
+				action = "${toUrl(text)";
+				typeText = "Facebook Messenger: ";
+			break;
+			case "viber" : 
+				typography = "MenuIcon fa fa-phone";
+				action = "viber://add?number=${text}";
+				typeText = "Viber: ";
+			break; 
+			case "phone" : 
+				typography = "MenuIcon fa fa-phone";
+				action = "tel:${text}";
+				typeText = "Call: ";
+			break;
+			case "email" : 
+				typography = "MenuIcon fa fa-envelope-o";
+				action = "mailto:${text}";
+				typeText = "Email: ";
+			break;
+		}
+	
+			return(
+				<div>
+					<hr />
+					<div className="Selector" onClick={() => window.open(action)}>  
+					<h1><div style={{ display: 'inline-block', direction: 'ltr',width: '100%',
+    					overflow: 'hidden', whiteSpace:'nowrap', textOverflow: 'ellipsis' }}>
+						{typeText}{text} </div></h1>
+						<i className= {typography} aria-hidden="true" />
+					</div>	
+				</div>
+			)
+	}
+
 	render() {
 		const { service, relatedServices } = this.state;
 		const { t, language, goToService } = this.props;
@@ -115,7 +167,12 @@ class ServiceDetail extends React.Component {
 				));
 			});
 		};
-		let fullAddress = [service.address_floor, service.address].filter(val => val).join(', ');
+		let fullAddress = [service.address, service.address_floor].filter(val => val).join(', ');
+
+		let sortedContactInformations = _.sortBy(service.contact_informations || [], ci => {
+			return ci.index;
+		});		
+
 		return (
 			<div className="ServiceDetail">
 				<Helmet>
@@ -205,9 +262,7 @@ class ServiceDetail extends React.Component {
 						<div className="Selector" onClick={() => window.open(`tel:${service.phone_number}`)}>
 							<h1>
 								{t("Call")}:
-								<ltr>
-									<a href={`tel:${service.phone_number}`}>{service.phone_number}</a>
-								</ltr>
+								<a href={`tel:${service.phone_number}`}>{service.phone_number}</a>
 							</h1>
 							<i className="MenuIcon fa fa-phone" aria-hidden="true" />
 						</div>
@@ -216,7 +271,9 @@ class ServiceDetail extends React.Component {
 					{service.email && <hr />}
 					{service.email && (
 						<div className="Selector" onClick={() => window.open(`mailto:${service.email}`)}>
-							<h1>{t("Email")}</h1>
+							<h1><span style={{display: 'inline-block',overflow: 'hidden'}}>{t('Email')}: </span><div style={{ display: 'inline-block', direction: 'ltr',maxWidth: '60%',
+    							overflow: 'hidden', whiteSpace:'nowrap', textOverflow: 'ellipsis' }}>
+							 {service.email}</div></h1>
 							<i className="MenuIcon fa fa-envelope-o" aria-hidden="true" />
 						</div>
 					)}
@@ -224,18 +281,24 @@ class ServiceDetail extends React.Component {
 					{service.website && <hr />}
 					{service.website && (
 						<div className="Selector" onClick={() => window.open(`${toUrl(service.website)}`)}>
-							<h1>{t("Web Site")}</h1>
+							<h1><div style={{ display: 'inline-block', direction: 'ltr',maxWidth: '85%',
+    							overflow: 'hidden', whiteSpace:'nowrap', textOverflow: 'ellipsis' }}>
+							{t('Website')}: {service.website}</div></h1>
 							<i className="MenuIcon fa fa-external-link" aria-hidden="true" />
 						</div>
 					)}
 
 					{service.facebook_page && <hr />}
 					{service.facebook_page && (
-						<div className="Selector" onClick={() => window.open(`${toUrl(service.facebook_page)}`)}>
-							<h1>{t("Facebook Page")}</h1>
+						<div className="Selector" onClick={() => window.open(`${toUrl(service.facebook_page)}`)}>							
+							<h1><div style={{ display: 'inline-block', direction: 'ltr',maxWidth: '85%',
+    							overflow: 'hidden', whiteSpace:'nowrap', textOverflow: 'ellipsis' }}>
+							{t('Facebook')}: {service.facebook_page}</div></h1> 
 							<i className="MenuIcon fa fa-facebook-f" aria-hidden="true" />
 						</div>
 					)}
+					
+					{service.contact_informations && sortedContactInformations.map(ci => this.renderContactInformation(ci))}
 				</div>
 			</div>
 		);
