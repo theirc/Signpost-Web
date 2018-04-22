@@ -18,7 +18,6 @@ const less = require("less");
 const fs = require("fs");
 const nunjucks = require("nunjucks");
 const conf = require("../content/config");
-const cms = require("../content/cms").default;
 const servicesApi = require("../content/servicesApi");
 const cmsApi = require("../content/cmsApi").default;
 const ReactApp = require("../App").default;
