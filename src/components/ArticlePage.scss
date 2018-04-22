@@ -97,13 +97,13 @@
 		@include brand-colors("border-color");
 	}
 
-	#timestamp {
-		padding-top: 5px;
+    #timestamp{
         font-size: 11px;
         font-style: italic;
-        position: relative;
-		right: 200px;
-	}
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px 5px;
+    }
 	
 	.title {
 		width: 100%;

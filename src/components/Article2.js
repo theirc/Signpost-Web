@@ -50,7 +50,7 @@ export default class ArticlePage extends Component {
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
                 <div id="timestamp">
-                <p>Last updated: 4/19/18</p>
+                    Last updated: 4/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/long-news.ogg"}/></div>
