@@ -50,7 +50,7 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج العفو</title>
                 </Helmet>
-				<ShareArticleWidget language={this.language} direction={this.direction} />
+				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
                 
                 <div id="timestamp">
                     Last updated: 4/19/18

@@ -81,7 +81,7 @@ class Article extends React.Component {
 
         return (
             <Placeholder>
-				<Article1 />
+				<Article1 language={language} direction={direction} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
         );

@@ -103,7 +103,7 @@ class ArticleFooter extends Component {
 					</div>
 				)}
 				{previous && <hr className="divider" />}
-				<ShareArticleWidget language={this.language} direction={this.direction} />					
+				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />					
 			</div>
 		);
 	}
