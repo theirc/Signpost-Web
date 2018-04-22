@@ -1,7 +1,15 @@
 @import "../shared/includes.scss";
 
 .BottomNav {
-	@include bottomNav-color( 'background-color');
+  @include bottomNav-color( 'background-color');
+  & > button > span {
+    @include bottomNav-shade-color( "color");
+  }
+  
+  & > button.Selected > span  {
+    @include brand-colors-inverse( "color");
+  }
+
 	box-shadow: 0px 1px 10px 1px;
 
 	.rtl & span {
@@ -11,7 +19,7 @@
 		.rtl & {
 			font-family: "Cairo", sans-serif;
 		}
-		@include brand-colors-inverse( "color");
+    @include brand-colors-inverse( "color");
 	}
 
 	.Selected > span > span {
@@ -33,6 +41,7 @@
 	}
 
 	.BottomButton {
+    
 		@media (max-width: 375px) {
 			font-size: 75% !important;
 		}

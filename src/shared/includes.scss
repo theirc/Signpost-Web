@@ -20,7 +20,10 @@ $dividerColor: darken($titleBackground, 50%);
 $colorMap: (ki: $accentKI,irc: $accentIRC, nrc: $accentNRC, generic: $accentGreen, mc: $accentRed, pg: $accentPG, cuenta: $accentCuenta);
 $colorInverseMap: (ki: #fff, irc: #000000, nrc: #ffffff, generic: #ffffff, mc: #ffffff, pg: #ffffff, cuenta: #ffffff);
 $colorPrimary: (ki:  $primaryKI, irc: #fff, nrc: #000, generic: #000, mc: #000, pg: #000, cuenta: #000);
-$bottomNavColor: (ki: $accentKI);
+$bottomNavColor: (ki: $accentKI, irc: #000 , nrc: #000, generic: #000, mc: #000, pg: #000, cuenta: #000);
+$bottomNavShadeColor: (ki: #80c9c9, irc: #000 , nrc: #000, generic: #000, mc: #000, pg: #000, cuenta: #000);
+
+
 
 @mixin grayscale-brand-colors($prop) {
 	@each $org in map-keys($map: $colorMap) {
@@ -77,9 +80,16 @@ $bottomNavColor: (ki: $accentKI);
 }
 
 @mixin bottomNav-color($prop) {
-	@each $org in map-keys($map: $colorMap) {
+	@each $org in map-keys($map: $bottomNavColor) {
 		.#{$org} &  {
-			#{$prop}: map-get($map: $colorMap, $key: $org);
+			#{$prop}: map-get($map: $bottomNavColor, $key: $org);
+		}
+	}
+}
+@mixin bottomNav-shade-color($prop) {
+	@each $org in map-keys($map: $bottomNavShadeColor) {
+		.#{$org} &  {
+			#{$prop}: map-get($map: $bottomNavShadeColor, $key: $org);
 		}
 	}
 }
