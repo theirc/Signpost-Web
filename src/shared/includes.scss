@@ -4,6 +4,10 @@ $accentRed: #e60000;
 $accentNRC: #ff7602;
 $accentPG: #59c2ed;
 $accentCuenta: #29991f;
+$accentKI: #009494;
+
+$primaryKI: #19505b;
+
 
 $desktopBreakpoint: 1000px;
 $bigDesktopBreakpoint: 1400px;
@@ -13,8 +17,9 @@ $bigDesktopPaddingWidth: 20vw;
 $titleBackground: #f0f0f0;
 $dividerColor: darken($titleBackground, 30%);
 
-$colorMap: (irc: $accentIRC, nrc: $accentNRC, generic: $accentGreen, mc: $accentRed, pg: $accentPG, cuenta: $accentCuenta);
-$colorInverseMap: (irc: #000000, nrc: #ffffff, generic: #ffffff, mc: #ffffff, pg: #ffffff, cuenta: #ffffff);
+$colorMap: (ki: $accentKI,irc: $accentIRC, nrc: $accentNRC, generic: $accentGreen, mc: $accentRed, pg: $accentPG, cuenta: $accentCuenta);
+$colorInverseMap: (ki: #fff, irc: #000000, nrc: #ffffff, generic: #ffffff, mc: #ffffff, pg: #ffffff, cuenta: #ffffff);
+$colorPrimary: (ki:  $primaryKI, irc: #fff, nrc: #000, generic: #000, mc: #000, pg: #000, cuenta: #000);
 
 @mixin grayscale-brand-colors($prop) {
 	@each $org in map-keys($map: $colorMap) {
@@ -46,8 +51,23 @@ $colorInverseMap: (irc: #000000, nrc: #ffffff, generic: #ffffff, mc: #ffffff, pg
 		}
 	}
 }
+@mixin brand-primary($prop) {
+	@each $org in map-keys($map: $colorPrimary) {
+		.#{$org} &  {
+			#{$prop}: map-get($map: $colorPrimary, $key: $org);
+		}
+	}
+}
 
 @mixin brand-colors-inverse($prop) {
+	@each $org in map-keys($map: $colorInverseMap) {
+		.#{$org} &  {
+			#{$prop}: map-get($map: $colorInverseMap, $key: $org);
+		}
+}
+}
+
+@mixin brand-inverse($prop) {
 	@each $org in map-keys($map: $colorInverseMap) {
 		.#{$org} &  {
 			#{$prop}: map-get($map: $colorInverseMap, $key: $org);

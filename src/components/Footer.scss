@@ -68,8 +68,8 @@
 		flex-direction: column;
 		min-height: 200px;
 		padding: 5px;
-		background-color: #000000;
-		color: #ffffff;
+		@include brand-primary( 'background-color');
+		@include brand-inverse( 'color');
 
 		img.app-store-logo {
 			max-height: 50px;
@@ -119,7 +119,7 @@
 		}
 
 		.icon-container {
-			@include brand-colors( "color");
+			@include brand-inverse( "color");
 		}
 	}
 
