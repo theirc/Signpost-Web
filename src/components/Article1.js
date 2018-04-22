@@ -87,7 +87,6 @@ export default class ArticlePage extends Component {
                         </b>    
                     </div>
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
-                    
                 </article>
             </div>
         );
