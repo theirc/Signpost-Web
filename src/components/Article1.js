@@ -91,8 +91,6 @@ export default class ArticlePage extends Component {
 
                     </div>
 
-
-
                 </article>
             </div>
         );
