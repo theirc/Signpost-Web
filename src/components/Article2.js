@@ -11,6 +11,7 @@ import FacebookPlayer from "react-facebook-player";
 import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
 import AudioPlayer from './AudioPlayer';
+import ShareArticleWidget from './ShareArticleWidget';
 
 const Remarkable = require("remarkable");
 
