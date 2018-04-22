@@ -76,11 +76,8 @@
 		"promise": "7.1.1",
 		"query-string": "^5.0.1",
 		"react": "^16.0.0",
-<<<<<<< HEAD
 		"react-audio-player": "^0.10.0",
-=======
 		"react-copy-to-clipboard": "^5.0.1",
->>>>>>> 8225da2123f765dbbea3986b2d1787aa23bf8a23
 		"react-dev-utils": "^3.0.0",
 		"react-dom": "^16.0.0",
 		"react-error-overlay": "^1.0.7",
