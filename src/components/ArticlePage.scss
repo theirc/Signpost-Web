@@ -174,15 +174,38 @@
 	}
 }
 .slider{
-	.container{
-		padding: 10px;
-	}
+	.container{		
+		margin-left:10px;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+		0 3px 1px -2px rgba(0,0,0,0.12), 
+		0 1px 5px 0 rgba(0,0,0,0.2);
+		border-radius: 10px 10px 10px 10px;
+		overflow: hidden;
+		height:140px;
+
+		a{
+			text-decoration: none;
+		}
+		.slide-content{
+			padding: 5px;
+		}
+	}	
 	img{
-		width: 80%;
+		width: 100%;
 		padding-right: 5%;
+		height: 70px;
 	}
-	.slider-title{
+	.slider-title{		
 		text-decoration: none;
 		text-overflow: ellipsis;
+		white-space: nowrap;	
+		overflow: hidden;
+		margin:0px;
 	}
+}
+.slick-track{
+	height: 80px;
+}
+.slick-slide{
+	margin-right: 10px;
 }
