@@ -165,14 +165,14 @@ const getFirsLevel = (slug, selectedLanguage) => {
 app.get("/", mainRequest({}));
 app.use("/", feathers.static("build"));
 app.get("/:country/mock/article1", (rq, rs, err) => mainRequest({
-    title: "",
-    description: "",
+    title: "أكثر من 10,000 لاجئ استفادوا من برنامج العفو",
+    description: "آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018",
     image: hostedFileName(rq, "/images/article2.png"),
 })(rq, rs));
 app.get("/:country/mock/article2", (rq, rs, err) => mainRequest({
     title: "الوضع القانوني لبعض اللاجئين السوريين غير المسجلين",
     description: "كيف ممكن قدّم على برنامج العفو قبل انتهائه في شهر أيلول (سبتمبر)؟",
-    image: hostedFileName(rq, "/images/article2.png"),
+    image: hostedFileName(rq, "/images/article1.png"),
 })(rq, rs));
 app.get("/:country/mock/service-listing", (rq, rs, err) => mainRequest({
     title: "",
