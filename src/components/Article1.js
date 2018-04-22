@@ -10,6 +10,7 @@ import {
 import FacebookPlayer from "react-facebook-player";
 import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
+import AudioPlayer from './AudioPlayer';
 
 const Remarkable = require("remarkable");
 
@@ -34,7 +35,7 @@ export default class ArticlePage extends Component {
         if (/facebook.com/.test(url)) {
             let videoId = url.replace(/.*facebook.com\/.*\/videos\/(.*)\/.*/, "$1");
 
-            return <FacebookPlayer style={{maxHeight: 100, }} className={"Facebook"} videoId={videoId} appId={APP_ID} />;
+            return <FacebookPlayer style={{maxWidth: 100 }} className={"Facebook"} videoId={videoId} appId={APP_ID} />;
         } else if (/youtube.com/) {
             let videoId = url.replace(/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, "$7");
             return <YouTube videoId={videoId} className={"YouTube"} />;
@@ -44,24 +45,29 @@ export default class ArticlePage extends Component {
     render() {
 
         return (
-            <div className="Article">
+            <div className="ArticlePage">
 					<Helmet>
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
-				<HeaderBar subtitle={false} title={`الوضع القانوني لبعض اللاجئين السوريين غير المسجلين`} />
-                
-                <article>
-                    <div>
-                    <h2>كيف ممكن قدّم على برنامج العفو قبل انتهائه في شهر أيلول (سبتمبر)؟</h2>
-                    <p>Posted 20 hours ago</p>
-                    
-                    <div id="tldr">
-                        <ul> 
-                            <li> برنامج مفتوح لأي لاجئ قادم من سوريا وغير مسجّل في الأردن باستثناء من غادر مخيّمه في أو بعد 1 تموز (يوليو) 2017</li>
-                            <li>  آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018 </li>
-                            <li> يُمكن لبعض المنظمات غير الحكومية (NGOs) مساعدتك في عمليّة التقديم</li>
-                        </ul>
-                    </div>
+                <div id="timestamp">
+                <p>Last updated: 4/19/18</p>
+                </div>
+
+				<div id="audio"><AudioPlayer src={"/audio/background.ogg"}/></div>
+
+                    <article>
+                        <div id= "topthird">
+                            <h1>الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h1>
+                                <p>كيف ممكن قدّم على برنامج العفو قبل انتهائه في شهر أيلول (سبتمبر)؟</p>
+                        
+                            <div id="tldr">
+                                <ul> 
+                                    <li> برنامج مفتوح لأي لاجئ قادم من سوريا وغير مسجّل في الأردن باستثناء من غادر مخيّمه في أو بعد 1 تموز (يوليو) 2017</li>
+                                    <li>  آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018 </li>
+                                    <li> يُمكن لبعض المنظمات غير الحكومية (NGOs) مساعدتك في عمليّة التقديم</li>
+                                </ul>
+                            </div>
+                        </div>
 
                     <img src="/images/article1.png" alt="UNICEF Amnesty Program"></img>
 
@@ -126,33 +132,33 @@ export default class ArticlePage extends Component {
                             التقديم للاستفادة من برنامج العفو.
                             </li>
                         </ul>
-                        <b>
-                        كيف تعمل هذه العملية
-                        </b>
+            
                     </div>
                     <div id="process">
                         <h2>كيف تعمل هذه العملية</h2>
-                        <ol>
-                            <li>جهّز وثائقك وأوراقك للتقديم. سيلزمك:
-                                <ul>
-                                    <li>مستند "ا"</li>
-                                    <li>مستند "ا"</li>
-                                    <li>مستند "ا"</li>
+                        <ul>
+                            <li class="first">
+                                جهّز وثائقك وأوراقك للتقديم. سيلزمك:
+                                <ul class="normal">
+                                    <li><a href="/">مستند "ا"</a></li>
+                                    <li><a href="/">مستند "ا"</a></li>
+                                    <li><a href="/">مستند "ا"</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="second">
                             أحضر وثائقك معك وتوجّه إلى أقرب مكتب لمفوضيّة اللاجئين، أو قم بزيارة إحدى المنظمات الغير حكومية التي يُمكنها المساعدة في عمليّة التقديم.<br/>
                             يُمكنك إيجاد أقرب مكتب لمفوضيّة اللاجئين 
                             <a href="/">هنا.</a><br/>
                             يُمكنك إيجاد أقرب منظمة غير حكومية يُمكنها مساعدتك<a href="/"> هنا</a>
                             </li>
-                            <li>
+                            <li class="third">
                             إنتظر إلى أن يتم التواصل معك.
                             </li>
-                            <li>
+                            <li class="fourth">
                             إذهب لاستلام الوثائق الجديدة. 
                             </li>
-                        </ol>
+                        </ul>
+
                         <b>الظاهر القصة سهلة وبسيطة. فيك تحكيلي أكتر عن إجراءات التقديم؟ </b>
                         <p>
                                 أكيد. توقّع الإنتظار لبعض الوقت داخل مكتب مفوضيّة اللاجئين. تتعهّد بعض
@@ -160,7 +166,9 @@ export default class ArticlePage extends Component {
                             ، بمساعدتك في تجنّب طوابير الانتظار. 
                         </p>
                         <p>هل شاهدت مقطع الفيديو الذي أعدّته مفوضيّة اللاجئين حول عمليّة التقديم؟ شاهده من هنا:</p>
+                        
                         {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
+
                         <b>شو لازم أعمل بعد هيك؟</b>
                         <div>
                             <p>بمجرّد حصولك على الوثائق الجديدة، ستتمكّن من الوصول والاستفادة من العديد من الخدمات، من ضمنها:</p>
@@ -176,7 +184,6 @@ export default class ArticlePage extends Component {
                         <p>أكيد مو مشكلة. تفضّل بزيارة صفحة الأسئلة الشائعة، أو أرسل لنا
                         <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك</a>
                         أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن. ,</p> 
-                    </div>
                     </div>
                 </article>
             </div>
