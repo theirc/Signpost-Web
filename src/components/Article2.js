@@ -53,7 +53,7 @@ export default class ArticlePage extends Component {
                 <p>Last updated: 4/19/18</p>
                 </div>
 
-				<div id="audio"><AudioPlayer src={"/audio/background.ogg"}/></div>
+				<div id="audio"><AudioPlayer src={"/audio/long-news.ogg"}/></div>
 
                     <article>
                         <div id= "topthird">
