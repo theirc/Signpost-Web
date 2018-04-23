@@ -74,14 +74,14 @@ class Article extends React.Component {
         const {
             direction, language
         } = this.props;
-
+        const { t } = this.props;
 		let next = null;
         let previous = null;
 
 
         return (
             <Placeholder>
-				<ServicePage language={language} direction={direction} />
+				<ServicePage language={language} direction={direction} t={t} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
         );
