@@ -7,18 +7,9 @@ import {
 } from "material-ui";
 import Headroom from "react-headrooms";
 import PropTypes from "prop-types";
-<<<<<<< HEAD
-import {
-    translate
-} from "react-i18next";
-import {
-    slide as Menu
-} from 'react-burger-menu';
-=======
 import { translate } from "react-i18next";
 import { slide as Menu } from 'react-burger-menu';
 import Collapsible from 'react-collapsible';
->>>>>>> 6ad4a73f14cb943d76ce69f152e889086ef21be9
 
 import "./AppHeader.css";
 
