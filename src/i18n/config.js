@@ -147,6 +147,7 @@ export default {
 			"Map of Services": "خـارطة الخدمـات",
 			"This page last updated on:": "اخر تحديث لهذه الصفحة كان بتاريخ:",
 			LAST_UPDATED: "اخر تحديث لهذه الصفحة كان بتاريخ:",
+			"Last updated": "اخر تحديث لهذه الصفحة كان بتاريخ:",
 			"Order results by distance to me": "ترتيب النتائج بحسب قربها من مكاني الحالي",
 			"Address in Serbian": "العنوان باللغة الصربية",
 			"Change language": "تغيير اللغة",

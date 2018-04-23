@@ -46,7 +46,7 @@ export default class ArticlePage extends Component {
                 </Helmet>
                 <ShareArticleWidget language={this.language} direction={this.direction} />
                 <div id="timestamp">
-                    Last updated: 3/19/18
+                اخر تحديث لهذه الصفحة كان بتاريخ: 3/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
@@ -54,8 +54,7 @@ export default class ArticlePage extends Component {
                     <article>
                         <div id="generalinfo">
                             <h1>مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h1>
-                            <p>العلامات (tags): مساعدة قانونية، سجلات الأحوال المدنية، مفرق</p>
-                            <p>:Icons</p>
+                            <p>العلامات (tags): مساعدة قانونية، سجلات الأحوال المدنية، مفرق</p>                            
                             <div id="icons">
                                 <img src="/images/wifi.png" alt="Wifi"/>
                                 <img src="/images/toilet.png" alt="toilet"/>
@@ -109,21 +108,21 @@ export default class ArticlePage extends Component {
 						<img src="/images/related/example1.jpg" />
 						<div className="slide-content">
 							<a href="/jordan/mock/article1"><h4 class="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
-							<h5>14 hours ago</h5>
+							<h5>1 منذ يوم</h5>
 						</div>
 					</div>
 					<div className="container">
 						<img src="/images/related/example2.jpg" />
 						<div className="slide-content">
-							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
-							<h5>2 days ago</h5>
+							<h4 class="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
+							<h5>2 منذ يوم</h5>
 						</div>
 					</div>	
                     <div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
-							<h4 class="slider-title">Third Article Title</h4>		
-							<h5>6 hours ago</h5>
+							<h4 class="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
+							<h5>قبل 12 ساعة</h5>
 						</div>				
 					</div>									
 					

@@ -63,13 +63,13 @@ export default class ArticlePage extends Component {
                 <ShareArticleWidget language={this.language} direction={this.direction} />
 
                 <div id="timestamp">
-                    Last updated: 4/19/18
+                اخر تحديث لهذه الصفحة كان بتاريخ: 4/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
 
-                    <article>
-                      <div id="article-ctn">
+                <article>
+                    <div id="article-ctn">
                         <div id= "topthird">
                             <h1>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h1>
                                 <p>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018</p>
@@ -85,41 +85,40 @@ export default class ArticlePage extends Component {
                         </div>
                         {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2128367340513560/")}
 
-                    <div id="maincontent">
-                        <b>
-                        هل أنا مؤهل للتقديم؟
-                        </b>
-                        <p>إذا كنت تعيش خارج المخيم ودون وثائق قانونية، يمكن أن يساعدك هذا البرنامج في الحصول على وضع قانوني في الأردن -- بشرط أنّك لم تغادر المخيم بشكل غير قانوني عند أو بعد 1 تموز (يوليو) 2017
-                        </p>
-                        <b>لمزيد من المعلومات وللتعرّف على كيفيّة التقديم:
-                        </b>
-                        <p><a href="/">برنامج مفوضيّة اللاجئين للعفو المخصص للاجئين غير المسجلين</a></p>
-                        <b>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018.
-                        </b>
-                    </div>
-                    <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
+                        <div id="maincontent">
+                            <b>
+                            هل أنا مؤهل للتقديم؟
+                            </b>
+                            <p>إذا كنت تعيش خارج المخيم ودون وثائق قانونية، يمكن أن يساعدك هذا البرنامج في الحصول على وضع قانوني في الأردن -- بشرط أنّك لم تغادر المخيم بشكل غير قانوني عند أو بعد 1 تموز (يوليو) 2017
+                            </p>
+                            <b>لمزيد من المعلومات وللتعرّف على كيفيّة التقديم:
+                            </b>
+                            <p><a href="/">برنامج مفوضيّة اللاجئين للعفو المخصص للاجئين غير المسجلين</a></p>
+                            <b>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018.
+                            </b>
+                        </div>                    
                     </div>
                 </article>
                 <Slider {...settings} className="slider">
 					<div className="container">
-						<img src="/images/related/example1.jpg" />
+						<img src="/images/article1.png" />
 						<div className="slide-content">
 							<a href="/jordan/mock/article2"><h4 class="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
-							<h5>14 hours ago</h5>
+							<h5>1 منذ يوم</h5>
 						</div>
 					</div>
 					<div className="container">
 						<img src="/images/related/example2.jpg" />
 						<div className="slide-content">
-							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
-							<h5>2 days ago</h5>
+							<h4 class="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
+							<h5>2 منذ يوم</h5>
 						</div>
 					</div>
                     <div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
-							<h4 class="slider-title">Third Article Title</h4>		
-							<h5>6 hours ago</h5>
+							<h4 class="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
+							<h5>قبل 12 ساعة</h5>
 						</div>				
 					</div>	
 				</Slider>
