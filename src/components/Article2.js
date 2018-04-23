@@ -12,6 +12,7 @@ import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
 import AudioPlayer from './AudioPlayer';
 import ShareArticleWidget from './ShareArticleWidget';
+import Slider from "react-slick";
 
 const Remarkable = require("remarkable");
 
@@ -44,7 +45,13 @@ export default class ArticlePage extends Component {
         return null;
     }
     render() {
-
+        let settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          };
         return (
             <div className="ArticlePage">
 					<Helmet>
@@ -181,10 +188,6 @@ export default class ArticlePage extends Component {
                         </p>
                         <p>هل شاهدت مقطع الفيديو الذي أعدّته مفوضيّة اللاجئين حول عمليّة التقديم؟ شاهده من هنا:</p>
 
-
-                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
-
-
                         {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
                         <br></br>
                         <b>شو لازم أعمل بعد هيك؟</b>
@@ -203,15 +206,35 @@ export default class ArticlePage extends Component {
                         <p>أكيد مو مشكلة. تفضّل بزيارة صفحة الأسئلة الشائعة، أو أرسل لنا
 
                         <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك  </a>
-                        أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن.</p>
-
-                        <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك</a>
-                        أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن. ,</p>
-                    </div>
-
-                    </div>
+                        أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن.</p> 
+                        </div>                       
+                    </div>                
 
                 </article>
+                <Slider {...settings} className="slider">
+					<div className="container">
+						<img src="/images/related/example1.jpg" />
+						<div className="slide-content">
+							<a href="/jordan/mock/service-listing"><h4 class="slider-title">مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h4></a>							
+							<h5>14 hours ago</h5>
+						</div>
+					</div>
+					<div className="container">
+						<img src="/images/related/example2.jpg" />
+						<div className="slide-content">
+							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
+							<h5>2 days ago</h5>
+						</div>
+					</div>	
+                    <div className="container">
+						<img src="/images/related/example3.jpg"/>
+						<div className="slide-content">
+							<h4 class="slider-title">Third Article Title</h4>		
+							<h5>6 hours ago</h5>
+						</div>				
+					</div>									
+					
+				</Slider>
             </div>
         );
     }
