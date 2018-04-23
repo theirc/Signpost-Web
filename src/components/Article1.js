@@ -61,8 +61,6 @@ export default class ArticlePage extends Component {
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
                 <ShareArticleWidget language={this.language} direction={this.direction} />
-					<Helmet>
-			   
 
                 <div id="timestamp">
                     Last updated: 4/19/18
@@ -100,13 +98,13 @@ export default class ArticlePage extends Component {
                         </b>
                     </div>
                     <img src="/images/article2.png" alt="UNICEF Amnesty Program"></img>
-
+                    </div>
                 </article>
                 <Slider {...settings} className="slider">
 					<div className="container">
 						<img src="/images/related/example1.jpg" />
 						<div className="slide-content">
-							<a href="#"><h4 class="slider-title">First Article Title</h4></a>							
+							<a href="/jordan/mock/article2"><h4 class="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
 							<h5>14 hours ago</h5>
 						</div>
 					</div>
@@ -116,14 +114,14 @@ export default class ArticlePage extends Component {
 							<h4 class="slider-title" title="Second Article Very Loong Title">Second Article Very Loong Title</h4>
 							<h5>2 days ago</h5>
 						</div>
-					</div>									
-					<div className="container">
+					</div>
+                    <div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
 							<h4 class="slider-title">Third Article Title</h4>		
 							<h5>6 hours ago</h5>
 						</div>				
-					</div>
+					</div>	
 				</Slider>
             </div>
         );
