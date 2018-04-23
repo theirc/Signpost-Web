@@ -50,7 +50,7 @@ class Skeleton extends React.Component {
 		}
 	}
 	render() {
-		const { children, country, language, match, onGoHome, onGoToSearch, onChangeLocation, onChangeLanguage, deviceType, router, hideFooter, removeErrorMessage } = this.props;
+		const { children, country, language, match, onGoHome, onGoToSearch, onChangeLocation, onChangeLanguage, deviceType, router, hideFooter, removeErrorMessage, onNavigate } = this.props;
 		const { errorMessage } = this.state;
 		const { config } = this.context;
 
@@ -109,6 +109,7 @@ class Skeleton extends React.Component {
 						onChangeCountry={onChangeLocation}
 						onChangeLanguage={onChangeLanguage.bind(this, router.location.pathname)}
 						logo={logo}
+						onNavigate={onNavigate}
 					/>
 					{notifications}
 					{children}
@@ -160,6 +161,10 @@ const mapDispatch = (d, p) => {
 		},
 		removeErrorMessage() {
 			d(actions.showErrorMessage(null));
+		},
+
+		onNavigate: path => {
+			d(push(path));
 		},
 	};
 };

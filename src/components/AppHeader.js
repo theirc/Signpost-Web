@@ -7,9 +7,12 @@ import {
 } from "material-ui";
 import Headroom from "react-headrooms";
 import PropTypes from "prop-types";
-import { translate } from "react-i18next";
-import { slide as Menu } from 'react-burger-menu';
-import Collapsible from 'react-collapsible';
+import {
+    translate
+} from "react-i18next";
+import {
+    slide as Menu
+} from 'react-burger-menu';
 
 import "./AppHeader.css";
 
@@ -96,102 +99,185 @@ class AppHeader extends Component {
             console.log("noop");
         };
 
+        const items = [{
+                name: t('Registration'),
+                subItems: [{
+                        href: '/jordan/mock/article1',
+                        name: t("Amnesty campaign"),
+                    },
+                    {
+                        href: '#',
+                        name: t("Ministry of Interior Service Card")
+                    },
+                    {
+                        href: '#',
+                        name: t("Q&A")
+                    },
+                ]
+            },
+            {
+                name: t('Vital records'),
+                subItems: [{
+                        href: '#',
+                        name: t("Birth certificates")
+                    },
+                    {
+                        href: '#',
+                        name: t("Marriage certificates")
+                    },
+                    {
+                        href: '#',
+                        name: t("Death certificates")
+                    },
+                    {
+                        href: '#',
+                        name: t("Q&A")
+                    },
+                ]
+            },
+            {
+                name: t('Legal assistance'),
+
+            },
+            {
+                name: t('Healthcare'),
+                subItems: [{
+                        href: '#',
+                        name: t("Primary care")
+                    },
+                    {
+                        href: '#',
+                        name: t("Specialized care")
+                    },
+                    {
+                        href: '#',
+                        name: t("Emergency care")
+                    },
+                    {
+                        href: '#',
+                        name: t("Women's health")
+                    },
+                    {
+                        href: '#',
+                        name: t("Q&A")
+                    },
+                ]
+            }, {
+                name: t("Education"),
+                subItems: [{
+                        href: '#',
+                        name: t("For minors"),
+                    },
+                    {
+                        href: '#',
+                        name: t("For adults"),
+                    },
+                    {
+                        href: '#',
+                        name: t("University"),
+                    },
+                    {
+                        href: '#',
+                        name: t("Report abuse"),
+                    },
+
+                ]
+            }, {
+                name: t("Work Options"),
+                subItems: [{
+                        href: '#',
+                        name: t("Legal rights"),
+                    },
+                    {
+                        href: '#',
+                        name: t("Finding a job"),
+                    },
+
+                    {
+                        href: '#',
+                        name: t("Q&A"),
+                    },
+
+                ]
+            }, {
+                name: t("Cash assistance"),
+                subItems: [
+
+                    {
+                        href: '#',
+                        name: t("Organizations"),
+                    },
+
+                    {
+                        href: '#',
+                        name: t("Process"),
+                    },
+
+                    {
+                        href: '#',
+                        name: t("Q&A"),
+                    },
+
+                ]
+            }, {
+                name: t("Women’s programs"),
+                subItems: [
+
+                    {
+                        href: '#',
+                        name: t("Child marriage"),
+                    },
+
+                    {
+                        href: '#',
+                        name: t("Support groups"),
+                    },
+
+                ]
+            },
+
+            {
+                name: t('Transportation options'),
+
+            },
+        ]
+        
+        const onNavigate = (r) => {
+            this.menu.toggleMenu()
+            this.props.onNavigate(r);
+        };
+
         return (
             <div className="AppHeader">
 				<Headroom tolerance={5} offset={200}>
 					<div className="app-bar">
-						<div className="app-bar-container" id="outer-container">							
-							<Menu right width={ '80%' } outerContainerId={ "outer-container" }>							
-								<Collapsible classParentString={"menu-parent"} trigger={t('Registration')} >
-								<div className="menu-item">
-									<a href="/jordan/mock/article1">{t("Amnesty campaign")}</a>
-								</div>
-								<div className="menu-item">
-									<a href="#">{t("Ministry of Interior Service Card")}</a>
-								</div>
-								<div className="menu-item">
-									<a href="#">{t("Q&A")}</a>
-								</div>
-								</Collapsible>
-								<Collapsible trigger={t('Vital records')} classParentString={"menu-parent"}>
-									<div className="menu-item">
-										<a href="#">{t("Birth certificates")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Marriage certificates")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Death certificates")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Q&A")}</a>
-									</div>
-								</Collapsible>
-								<Collapsible classParentString={"menu-parent"} trigger={t('Legal assistance')}>	
-								</Collapsible>								
-								<Collapsible classParentString={"menu-parent"} trigger={t('Healthcare')}>
-									<div className="menu-item">
-										<a href="#">{t("Primary care")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Specialized care")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Emergency care")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Women's health")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Q&A")}</a>
-									</div>
-								</Collapsible>								
-								<Collapsible classParentString={"menu-parent"} trigger={t("Education")}>
-									<div className="menu-item">
-										<a href="#">{t("For minors")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("For adults")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("University")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Report abuse")}</a>
-									</div>										
-								</Collapsible>
-								<Collapsible classParentString={"menu-parent"} trigger={t("Work Options")}>
-									<div className="menu-item">
-										<a href="#">{t("Legal rights")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Finding a job")}</a>
-									</div>	
-									<div className="menu-item">
-										<a href="#">{t("Q&A")}</a>
-									</div>						
-								</Collapsible>
-								<Collapsible classParentString={"menu-parent"} trigger={t('Cash assistance')}>
-									<div className="menu-item">
-										<a href="#">{t("Organizations")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Process")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Q&A")}</a>
-									</div>									
-								</Collapsible>
-								<Collapsible classParentString={"menu-parent"} trigger={t('Women’s programs')}>
-									<div className="menu-item">
-										<a href="#">{t("Child marriage")}</a>
-									</div>
-									<div className="menu-item">
-										<a href="#">{t("Support groups")}</a>
-									</div>					
-								</Collapsible>
-								<Collapsible classParentString={"menu-parent"} trigger={t('Transportation options')}>		
-								</Collapsible>
+						<div className="app-bar-container" id="outer-container">
+							<Menu right width={ '80%' } ref={(r)=> { this.menu= r;}} outerContainerId={ "outer-container" }>							
+							<div className="CategoryList">
+				<ul>
+
+	{items.map((c, i) => (
+						<li key={`Menu-${i}`}>
+							{i > 0 && <hr className="line" />}
+							<input type="checkbox" name={"tab"} id={`SubMenu-${i}`} />
+								<label key="a-1" htmlFor={`SubMenu-${i}`} className="container">
+									<strong className="category-name">{c.name}</strong>
+								</label>
+								{c.subItems && (
+									<ul key="a-2">
+										{c.subItems.map(
+											(a, k) => (<li key={`SubMenu-${k}`} onClick={() => onNavigate(a.href)}>
+														<div className="inner-container article-title">
+															<div>{a.name}</div>
+														</div>
+													</li>)
+										)}
+									</ul>
+								)}
+						</li>
+					))}
+					</ul>							
+							</div>
 							</Menu>
 						</div>
 						<div className={["app-bar-container", "logo-centered" ].join(" ")} onClick={onGoHome || noop}>
