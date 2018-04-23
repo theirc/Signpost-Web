@@ -51,7 +51,7 @@ export default class ArticlePage extends Component {
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
 				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-                
+
                 <div id="timestamp">
                     Last updated: 4/19/18
                 </div>
@@ -140,9 +140,9 @@ export default class ArticlePage extends Component {
                     </div>
                     <div id="process">
                         <h2>كيف تعمل هذه العملية</h2>
-                        <ul>
+                        <ul class="main-list">
                             <li class="first">
-                                جهّز وثائقك وأوراقك للتقديم. سيلزمك:
+                              <h4>  جهّز وثائقك وأوراقك للتقديم. سيلزمك:</h4>
                                 <ul class="normal">
                                     <li><a href="/">مستند "ا"</a></li>
                                     <li><a href="/">مستند "ا"</a></li>
@@ -150,16 +150,26 @@ export default class ArticlePage extends Component {
                                 </ul>
                             </li>
                             <li class="second">
+
+                        <h4>    أحضر وثائقك معك وتوجّه إلى أقرب مكتب لمفوضيّة اللاجئين، أو قم بزيارة إحدى المنظمات الغير حكومية التي يُمكنها المساعدة في عمليّة التقديم.<br/>
+                            يُمكنك إيجاد أقرب مكتب لمفوضيّة اللاجئين <a href="/">هنا.</a><br/></h4>
+
+
                             أحضر وثائقك معك وتوجّه إلى أقرب مكتب لمفوضيّة اللاجئين، أو قم بزيارة إحدى المنظمات الغير حكومية التي يُمكنها المساعدة في عمليّة التقديم.<br/>
                             يُمكنك إيجاد أقرب مكتب لمفوضيّة اللاجئين
                             <a href="/">هنا.</a><br/>
+
                             يُمكنك إيجاد أقرب منظمة غير حكومية يُمكنها مساعدتك<a href="/"> هنا</a>
                             </li>
                             <li class="third">
-                            إنتظر إلى أن يتم التواصل معك.
+                          <h4>  إنتظر إلى أن يتم التواصل معك. </h4>
                             </li>
                             <li class="fourth">
+
+                          <h4>  إذهب لاستلام الوثائق الجديدة. </h4>
+
                             إذهب لاستلام الوثائق الجديدة.
+
                             </li>
                         </ul>
 
@@ -171,8 +181,12 @@ export default class ArticlePage extends Component {
                         </p>
                         <p>هل شاهدت مقطع الفيديو الذي أعدّته مفوضيّة اللاجئين حول عمليّة التقديم؟ شاهده من هنا:</p>
 
+
                         {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
 
+
+                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
+                        <br></br>
                         <b>شو لازم أعمل بعد هيك؟</b>
                         <div>
                             <p>بمجرّد حصولك على الوثائق الجديدة، ستتمكّن من الوصول والاستفادة من العديد من الخدمات، من ضمنها:</p>
@@ -181,14 +195,20 @@ export default class ArticlePage extends Component {
                             <a href="/">خدمات أخرى</a><br/>
                         </div>
                         <p>كذلك سيكون بإمكانك الحصول على شهادات ووثائق هامة للغاية مثل شهادات الميلاد وشهادات الزواج. تعرّف على المزيد:</p><br/>
-                        <a href="/">الشهادات الهامّة</a>
+
+                        <a href="/">  الشهادات الهامّة   </a>
 
                         <b>عندي كم سؤال إضافيّات. </b>
 
                         <p>أكيد مو مشكلة. تفضّل بزيارة صفحة الأسئلة الشائعة، أو أرسل لنا
+
+                        <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك  </a>
+                        أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن.</p>
+
                         <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك</a>
                         أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن. ,</p>
                     </div>
+
                     </div>
 
                 </article>
