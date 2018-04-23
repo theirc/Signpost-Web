@@ -211,6 +211,7 @@ export default class ArticlePage extends Component {
                     </div>                
 
                 </article>
+                <h3>معلومات ذات صله</h3>
                 <Slider {...settings} className="slider">
 					<div className="container">
 						<img src="/images/servicelisting.png" />
