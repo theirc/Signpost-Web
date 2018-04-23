@@ -13,10 +13,6 @@ import {
 import {
     slide as Menu
 } from 'react-burger-menu';
-import {
-    Accordion,
-    AccordionItem
-} from 'react-sanfona';
 
 import "./AppHeader.css";
 
@@ -109,100 +105,6 @@ class AppHeader extends Component {
 					<div className="app-bar">
 						<div className="app-bar-container" id="outer-container">
 							<Menu right width={ '80%' } ref={(r)=> { this.menu= r;}} outerContainerId={ "outer-container" }>							
-								<Accordion>									
-									<AccordionItem className="menu-parent" title={t('Registration')}>
-										<div className="menu-item">
-											<a href="/jordan/mock/article1">{t("Amnesty campaign")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Ministry of Interior Service Card")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Q&A")}</a>
-										</div>
-									</AccordionItem>								
-									<AccordionItem className="menu-parent" title={t('Vital records')}>
-										<div className="menu-item">
-											<a href="#">{t("Birth certificates")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Marriage certificates")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">t{("Death certificates")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Q&A")}</a>
-										</div>
-									</AccordionItem>								
-									<AccordionItem className="menu-parent" title={t('Legal assistance')}>	
-									</AccordionItem>								
-									<AccordionItem className="menu-parent" title={t('Healthcare')}>
-										<div className="menu-item">
-											<a href="#">{t("Primary care")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Specialized care")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Emergency care")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Women's health")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Q&A")}</a>
-										</div>
-									</AccordionItem>								
-									<AccordionItem className="menu-parent" title={t("Education")}>
-										<div className="menu-item">
-											<a href="#">{t("For minors")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("For adults")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("University")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Report abuse")}</a>
-										</div>										
-									</AccordionItem>
-									<AccordionItem className="menu-parent" title={t("Work Options")}>
-										<div className="menu-item">
-											<a href="#">{t("Legal rights")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Finding a job")}</a>
-										</div>	
-										<div className="menu-item">
-											<a href="#">{t("Q&A")}</a>
-										</div>						
-									</AccordionItem>
-									<AccordionItem className="menu-parent" title={t('Cash assistance')}>
-										<div className="menu-item">
-											<a href="#">{t("Organizations")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Process")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Q&A")}</a>
-										</div>									
-									</AccordionItem>
-									<AccordionItem className="menu-parent" title={t('Women’s programs')}>
-										<div className="menu-item">
-											<a href="#">{t("Child marriage")}</a>
-										</div>
-										<div className="menu-item">
-											<a href="#">{t("Support groups")}</a>
-										</div>					
-									</AccordionItem>
-									<AccordionItem className="menu-parent" title={t('Transportation options')}>		
-									</AccordionItem>
-
-								</Accordion>
-								
 							</Menu>
 						</div>
 						<div className={["app-bar-container", "logo-centered" ].join(" ")} onClick={onGoHome || noop}>
