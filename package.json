@@ -105,7 +105,7 @@
         "react-router-redux": "^5.0.0-alpha.6",
         "react-router-server": "^4.2.1",
         "react-router-transition": "^1.1.1",
-        "react-sanfona": "^1.2.2",
+        "react-sanfona": "git+https://github.com/theirc/react-sanfona.git",
         "react-slick": "^0.23.1",
         "react-test-renderer": "16.0.0-alpha.12",
         "react-transition-group": "^2.2.1",

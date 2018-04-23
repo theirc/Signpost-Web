@@ -1,75 +1,114 @@
-import React, { Component } from "react";
-import { Button, IconButton } from "material-ui";
+import React, {
+    Component
+} from "react";
+import {
+    Button,
+    IconButton
+} from "material-ui";
 import Headroom from "react-headrooms";
 import PropTypes from "prop-types";
-import { translate } from "react-i18next";
-import { slide as Menu } from 'react-burger-menu';
-import { Accordion, AccordionItem } from 'react-sanfona';
+import {
+    translate
+} from "react-i18next";
+import {
+    slide as Menu
+} from 'react-burger-menu';
+import {
+    Accordion,
+    AccordionItem
+} from 'react-sanfona';
 
 import "./AppHeader.css";
 
 class AppHeader extends Component {
-	static propTypes = {
-		onChangeCountry: PropTypes.func,
-		onGoToSearch: PropTypes.func,
-		onGoHome: PropTypes.func,
-		country: PropTypes.object,
-		language: PropTypes.string,
-	};
+    static propTypes = {
+        onChangeCountry: PropTypes.func,
+        onGoToSearch: PropTypes.func,
+        onGoHome: PropTypes.func,
+        country: PropTypes.object,
+        language: PropTypes.string,
+    };
 
-	state = {
-		search: false,
-		searchText: "",
-		active: false,
-	};
-	toggleClass() {
-		const { currentState } = this.state.active;
-		this.setState({ active: !currentState });
-	}
-	toggleSearch() {
-		const { search } = this.state;
-		if (!search) {
-			window.scrollTo(0, 0);
-		}
-		this.setState({ search: !search });
-	}
-	handleInputChange(event) {
-		const target = event.target;
-		const value = target.type === "checkbox" ? target.checked : target.value;
-		const name = target.name;
+    state = {
+        search: false,
+        searchText: "",
+        active: false,
+    };
+    toggleClass() {
+        const {
+            currentState
+        } = this.state.active;
+        this.setState({
+            active: !currentState
+        });
+    }
+    toggleSearch() {
+        const {
+            search
+        } = this.state;
+        if (!search) {
+            window.scrollTo(0, 0);
+        }
+        this.setState({
+            search: !search
+        });
+    }
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === "checkbox" ? target.checked : target.value;
+        const name = target.name;
 
-		this.setState({
-			[name]: value,
-		});
-	}
-	handleSubmit(event) {
-		const { onGoToSearch } = this.props;
-		const { searchText } = this.state;
+        this.setState({
+            [name]: value,
+        });
+    }
+    handleSubmit(event) {
+        const {
+            onGoToSearch
+        } = this.props;
+        const {
+            searchText
+        } = this.state;
 
-		onGoToSearch(searchText);
-		setTimeout(() => {
-			this.setState({ search: false, searchText: "" });
-		}, 200);
-		event.preventDefault();
-	}
+        onGoToSearch(searchText);
+        setTimeout(() => {
+            this.setState({
+                search: false,
+                searchText: ""
+            });
+        }, 200);
+        event.preventDefault();
+    }
 
-	showSettings (event) {
-		event.preventDefault();		
-	  }
+    showSettings(event) {
+        event.preventDefault();
+    }
 
-	render() {
-		const { onChangeCountry, onChangeLanguage, disableLanguageSelector, disableCountrySelector, onGoHome, country, language, t } = this.props;
-		const { search, searchText } = this.state;
-		const noop = () => {
-			console.log("noop");
-		};
+    render() {
+        const {
+            onChangeCountry,
+            onChangeLanguage,
+            disableLanguageSelector,
+            disableCountrySelector,
+            onGoHome,
+            country,
+            language,
+            t
+        } = this.props;
+        const {
+            search,
+            searchText
+        } = this.state;
+        const noop = () => {
+            console.log("noop");
+        };
 
-		return (
-			<div className="AppHeader">
+        return (
+            <div className="AppHeader">
 				<Headroom tolerance={5} offset={200}>
 					<div className="app-bar">
 						<div className="app-bar-container" id="outer-container">
-							<Menu right width={ '80%' } outerContainerId={ "outer-container" }>							
+							<Menu right width={ '80%' } ref={(r)=> { this.menu= r;}} outerContainerId={ "outer-container" }>							
 								<Accordion>									
 									<AccordionItem className="menu-parent" title={t('Registration')}>
 										<div className="menu-item">
@@ -213,9 +252,8 @@ class AppHeader extends Component {
 					</form>
 				)}
 			</div>
-		);
-	}
+        );
+    }
 }
 
 export default translate()(AppHeader);
-
