@@ -160,7 +160,7 @@ export default class ArticlePage extends Component {
 					<title>{title}</title>
 
 				</Helmet>
-				<ShareArticleWidget language={this.language} direction={this.direction} />
+				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
 				
 				<article>
 					<AudioPlayer src={"/audio/background.ogg"}/>
