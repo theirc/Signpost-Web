@@ -130,7 +130,10 @@
 		color: lighten(black, 50%);
 	}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7485e9f10eca644984b6eb2bdbf4248574003995
 	.hero {
 		background-color: #000000;
 		display: flex;
@@ -141,10 +144,20 @@
 	.hero > img {
 		max-width: 100%;
 	}
+.carousel {
+	h3 {
+		padding-left:20px;
+	}
 
+	h5 {
+		font-size: 12px;
+		font-weight: 400;
+		margin-top: 10px;
+		opacity: 0.7;
+	}
+}
 	article {
-		margin-left: 10px;
-		margin-right: 10px;
+
 
 		img {
 			max-width: 100%;
@@ -176,7 +189,7 @@
 		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
 		0 3px 1px -2px rgba(0,0,0,0.12),
 		0 1px 5px 0 rgba(0,0,0,0.2);
-		border-radius: 10px 10px 10px 10px;
+		border-radius: 5px 5px 5px 5px;
 		overflow: hidden;
 		height:140px;
 
@@ -184,12 +197,11 @@
 			text-decoration: none;
 		}
 		.slide-content{
-			padding: 5px;
+			padding: 10px;
 		}
 	}
 	img{
 		width: 100%;
-		padding-right: 5%;
 		height: 70px;
 	}
 	.slider-title{

@@ -11,6 +11,7 @@ import FacebookPlayer from "react-facebook-player";
 import YouTube from "react-youtube";
 import HeaderBar from "./HeaderBar";
 import AudioPlayer from './AudioPlayer';
+import ShareArticleWidget from './ShareArticleWidget';
 
 const Remarkable = require("remarkable");
 
@@ -49,6 +50,8 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
+				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
+
                 <div id="timestamp">
                     Last updated: 4/19/18
                 </div>
@@ -56,6 +59,7 @@ export default class ArticlePage extends Component {
 				<div id="audio"><AudioPlayer src={"/audio/long-news.ogg"}/></div>
 
                     <article>
+                      <div class="article-ctn">
                         <div id= "topthird">
                             <h1>الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h1>
                                 <p>كيف ممكن قدّم على برنامج العفو قبل انتهائه في شهر أيلول (سبتمبر)؟</p>
@@ -146,8 +150,14 @@ export default class ArticlePage extends Component {
                                 </ul>
                             </li>
                             <li class="second">
+
                         <h4>    أحضر وثائقك معك وتوجّه إلى أقرب مكتب لمفوضيّة اللاجئين، أو قم بزيارة إحدى المنظمات الغير حكومية التي يُمكنها المساعدة في عمليّة التقديم.<br/>
                             يُمكنك إيجاد أقرب مكتب لمفوضيّة اللاجئين <a href="/">هنا.</a><br/></h4>
+
+
+                            أحضر وثائقك معك وتوجّه إلى أقرب مكتب لمفوضيّة اللاجئين، أو قم بزيارة إحدى المنظمات الغير حكومية التي يُمكنها المساعدة في عمليّة التقديم.<br/>
+                            يُمكنك إيجاد أقرب مكتب لمفوضيّة اللاجئين
+                            <a href="/">هنا.</a><br/>
 
                             يُمكنك إيجاد أقرب منظمة غير حكومية يُمكنها مساعدتك<a href="/"> هنا</a>
                             </li>
@@ -155,7 +165,11 @@ export default class ArticlePage extends Component {
                           <h4>  إنتظر إلى أن يتم التواصل معك. </h4>
                             </li>
                             <li class="fourth">
+
                           <h4>  إذهب لاستلام الوثائق الجديدة. </h4>
+
+                            إذهب لاستلام الوثائق الجديدة.
+
                             </li>
                         </ul>
 
@@ -166,6 +180,10 @@ export default class ArticlePage extends Component {
                             ، بمساعدتك في تجنّب طوابير الانتظار.
                         </p>
                         <p>هل شاهدت مقطع الفيديو الذي أعدّته مفوضيّة اللاجئين حول عمليّة التقديم؟ شاهده من هنا:</p>
+
+
+                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
+
 
                         {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
                         <br></br>
@@ -183,9 +201,16 @@ export default class ArticlePage extends Component {
                         <b>عندي كم سؤال إضافيّات. </b>
 
                         <p>أكيد مو مشكلة. تفضّل بزيارة صفحة الأسئلة الشائعة، أو أرسل لنا
+
                         <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك  </a>
                         أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن.</p>
+
+                        <a href="https://www.facebook.com/khabrona.info1"> رسالة عبر الفيسبوك</a>
+                        أو من خلال تطبيق خبرونا (Khabrona.Info). سنقوم بالرّد على أسئلتك في أقرب وقت مُمكن. ,</p>
                     </div>
+
+                    </div>
+
                 </article>
             </div>
         );
