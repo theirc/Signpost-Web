@@ -44,7 +44,7 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</title>
                 </Helmet>
-                <ShareArticleWidget language={this.language} direction={this.direction} />
+                <ShareArticleWidget language={this.props.language} direction={this.props.direction} />
                 <div id="timestamp">
                 اخر تحديث لهذه الصفحة كان بتاريخ: 3/19/18
                 </div>
