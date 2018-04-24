@@ -44,10 +44,7 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</title>
                 </Helmet>
-                <ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-                <div id="timestamp">
-                اخر تحديث: 3/19/18
-                </div>
+                <ShareArticleWidget language={this.props.language} direction={this.props.direction} lastUpdated={"3/19/18"} />
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
 

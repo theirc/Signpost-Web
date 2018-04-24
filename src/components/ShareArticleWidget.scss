@@ -1,0 +1,54 @@
+@import "../shared/includes.scss";
+
+.ShareSelector {    
+    .ltr & {
+        s {
+            float: right;
+        }
+    }
+    .rtl & {
+        s {
+            float: left;
+        }
+    }
+
+    .selector {
+		width: 100%;
+		display: flex;
+		margin: 0;
+		background-color: $titleBackground;
+		min-height: 60px;
+		flex-direction: row;
+		align-items: center;
+		cursor: pointer;
+		&:active {
+			background-color: darken($titleBackground, 5%);
+		}
+	}
+
+	.selector > h1 {
+		font-size: 16px;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 10px 10px 10px 20px;
+		flex: 1;
+	}
+    .sharePage .icon {
+		margin: 0px 5px 0px 5px;
+		height: 24px;
+		widows: 24px;
+
+		.ltr & {
+			margin-right: 13px;
+		}
+		.rtl & {
+			margin-left: 13px;
+		}
+    }
+    
+    .timestamp {
+        width: 100%;
+        padding: 10px;
+    }
+}

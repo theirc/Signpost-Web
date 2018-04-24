@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { NavigateBefore, NavigateNext, Share, Link } from "material-ui-icons";
 import { translate } from "react-i18next";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import "./ArticleFooter.css";
+import "./ShareArticleWidget.css";
 
 /**
  * 
@@ -49,23 +49,31 @@ class ShareArticleWidget extends Component {
     }	
 
     render() {
-		const { direction, t } = this.props;
+		const { direction, t, lastUpdated } = this.props;
 		const rtl = direction === "rtl";
 
 		return (
-            <div className="ArticleFooter">
+            <div className="ShareSelector">
 				<CopyToClipboard sharePage={this.sharePage} text={this.state.value}>				
 					<div className="selector">					
 						<div className="selector sharePage">													
 							<Link className="icon" onClick={() => this.Copiedlnk()} />
 							<img className="icon" src="/images/icons/whatsapp-icon.png" onClick={() => window.open('whatsapp://send?text='+encodeURIComponent(this.state.value))}/>
 							<img className="icon" src="/images/icons/facebook-icon.png" onClick={() => this.share()}/>
+							{lastUpdated && 
+								<div id="timestamp" className="timestamp">
+									{t("Last updated")+":"+lastUpdated}
+								</div>
+							}
 						</div>	
+						
 					</div>
 				</CopyToClipboard>
 				<div className={this.state.copied ? "snackbar-show" : "snackbar-hidden"}>
 					Copied
 				</div>
+				
+				
 			</div>
 			
         )
