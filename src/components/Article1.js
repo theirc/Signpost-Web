@@ -104,21 +104,21 @@ export default class ArticlePage extends Component {
 					<div className="container">
 						<img src="/images/article1.png" />
 						<div className="slide-content">
-							<a href="/jordan/mock/article2"><h4 class="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
+							<a href="/jordan/mock/article2"><h4 className="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
 							<h5>1 منذ يوم</h5>
 						</div>
 					</div>
 					<div className="container">
 						<img src="/images/related/example2.jpg" />
 						<div className="slide-content">
-							<h4 class="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
+							<h4 className="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
 							<h5>2 منذ يوم</h5>
 						</div>
 					</div>
                     <div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
-							<h4 class="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
+							<h4 className="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
 							<h5>قبل 12 ساعة</h5>
 						</div>				
 					</div>	
