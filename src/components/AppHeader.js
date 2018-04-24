@@ -296,15 +296,13 @@ class AppHeader extends Component {
 											<span className="app-bar-selectors" color="contrast" onClick={onChangeCountry || noop}>
 												{(country && country.fields.name) || " "}
 											</span>
-										)}
-										{!disableLanguageSelector && !disableCountrySelector && <div className="app-bar-separator" />}
-										{ /* !disableLanguageSelector && (
+										)}										
+										{  !disableLanguageSelector && (
 											<span className="app-bar-selectors" color="contrast" onClick={onChangeLanguage}>
-												{language || " "}
+												<img src="/images/icons/language-switch.svg"/>
 											</span>
-										)*/}
-
-										{/* <div className="app-bar-separator" />*/}
+										)}
+										{ <div className="app-bar-separator" />}
 										<IconButton
 											className={`search-close ${[this.state.search && "active"].join(" ")}`}
 											color="contrast"
