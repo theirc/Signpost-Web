@@ -65,22 +65,23 @@ export default class ArticlePage extends Component {
                             <div id="info">
                                 <ul>
                                     <li class="telephone">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li class="whatsapp">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li class="facebook">
-                                    fb.me/khabrona.info1
+                                    <p>fb.me/khabrona.info1</p>
                                     </li>
                                     <li class="location">
-                                    <a href="/">حي الجنوبي</a><br/>
+                                    <p><a href="/">حي الجنوبي</a></p><br/>
                                     <p>العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول. </p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <img src="/images/servicelisting.png" alt="Al Janoubi Entrance"></img>
+                        <div class="locationcaption"><p>الجزء الأمامي من المبنى</p></div>
                         <div id="servicesDescr">
                             <h1>معلومات عن الخدمات المقدمة</h1>
                             <ul>
@@ -94,14 +95,17 @@ export default class ArticlePage extends Component {
                             <p>ماذا علي أن أحضر معي: بطاقة هويّة. (بطاقة تعريفك)</p>
                             <p>ملاحظات: أحرص على القدوم قبل بساعة حتى تتمكن من الاستفادة من هذه الخدمة.</p>
                             <p>عناوين أخرى: في<a href="/"> إربد</a> و <a href="/">رامثا</a></p>
-                            <b>المرافق:</b>
-                            <p>انترنت واي فاي: يوجد</p>
-                            <p>دورات مياه مختلطة: يوجد</p>
-                            <p>مساحة للإرضاع: يوجد</p>
-                            <p>مسارات ممهدة لمستعملي الكراسي المتحركة: نعم </p>
-                            <p>مجانية: نعم</p>
                         </div>
-                           
+                        <div id="addtlinfo">
+                            <b>المرافق:</b>
+                            <ul>
+                                <li class="wifi"><p>انترنت واي فاي: يوجد</p></li>
+                                <li class="wc"><p>دورات مياه مختلطة: يوجد</p></li>
+                                <li class="breastfeeding"><p>مساحة للإرضاع: يوجد</p></li>
+                                <li class="handicap"><p>مسارات ممهدة لمستعملي الكراسي المتحركة: نعم</p></li>
+                                <li class="free"><p>مجانية: نعم</p></li>
+                            </ul>
+                        </div>
                 </article>
                 <Slider {...settings} className="slider">
 					<div className="container">
