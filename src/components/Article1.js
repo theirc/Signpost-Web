@@ -63,7 +63,7 @@ export default class ArticlePage extends Component {
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction} />
 
                 <div id="timestamp">
-                اخر تحديث لهذه الصفحة كان بتاريخ: 4/19/18
+                اخر تحديث: 4/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
@@ -83,7 +83,7 @@ export default class ArticlePage extends Component {
                                 </ul>
                             </div>
                         </div>
-                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2128367340513560/")}
+                        {this.renderVideo("https://www.facebook.com/UNHCRJordan/videos/2107235179293443/")}
 
                         <div id="maincontent">
                             <b>
@@ -93,7 +93,7 @@ export default class ArticlePage extends Component {
                             </p>
                             <b>لمزيد من المعلومات وللتعرّف على كيفيّة التقديم:
                             </b>
-                            <p><a href="/">برنامج مفوضيّة اللاجئين للعفو المخصص للاجئين غير المسجلين</a></p>
+                            <p><a href="/jordan/mock/article2">برنامج مفوضيّة اللاجئين للعفو المخصص للاجئين غير المسجلين</a></p>
                             <b>آخر موعد للتقديم هو 27 أيلول (سبتمبر) 2018.
                             </b>
                         </div>                    

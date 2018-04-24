@@ -46,7 +46,7 @@ export default class ArticlePage extends Component {
                 </Helmet>
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction} />
                 <div id="timestamp">
-                اخر تحديث لهذه الصفحة كان بتاريخ: 3/19/18
+                اخر تحديث: 3/19/18
                 </div>
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
