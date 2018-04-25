@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="87px" viewBox="0 0 86 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>6A341EB0-E2A5-4035-AC57-5DCB91F88683</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="344" height="323" rx="8"></rect>
+        <filter x="-2.5%" y="-2.0%" width="104.9%" height="105.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.235294118   0 0 0 0 0.250980392   0 0 0 0 0.262745098  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.235294118   0 0 0 0 0.250980392   0 0 0 0 0.262745098  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="203" height="225" rx="8"></rect>
+        <filter x="-4.2%" y="-2.9%" width="108.4%" height="107.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.235294118   0 0 0 0 0.250980392   0 0 0 0 0.262745098  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.235294118   0 0 0 0 0.250980392   0 0 0 0 0.262745098  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-6" points="0 0 94 0 94 95 0 95"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-85.000000, -104.000000)">
+            <g id="Group-2" transform="translate(11.000000, 24.000000)">
+                <g id="dialog-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="Bitmap-Copy" transform="translate(25.000000, 88.000000)">
+                <g id="Group-3">
+                    <g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <rect id="Rectangle" fill="#F5F5F5" mask="url(#mask-4)" x="0" y="-1" width="203" height="119"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Page-1" transform="translate(80.000000, 104.000000)">
+                <g id="Group-3">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-7)" x="23" y="8" width="48" height="72"></rect>
+                    <path d="M51.8128903,54.8724876 C51.8128903,50.9277201 51.8272339,46.9853551 51.7985468,43.04299 C51.7937656,42.32707 52.0256528,42.1108525 52.7213144,42.1228646 C54.6122708,42.1613033 56.5056178,42.0940356 58.3941836,42.1564984 C59.2165465,42.182925 59.3886689,41.8225626 59.4412619,41.1138498 C59.6540244,38.2669865 59.8739586,35.4201233 60.1680011,32.5828697 C60.2421094,31.8693521 60.0245658,31.7564385 59.4221372,31.7612433 C57.2777783,31.7780603 55.1310288,31.7468288 52.9866699,31.770853 C52.3722883,31.7780603 52.111714,31.6002815 52.1451823,30.9492267 C52.1882129,30.0459181 52.1475729,29.1354024 52.1571352,28.2272891 C52.1786506,26.2092594 52.9316863,25.4573031 54.9350004,25.4476935 C56.4315095,25.4428886 57.9280186,25.433279 59.4245278,25.4549007 C59.9289422,25.462108 60.1273611,25.2987437 60.1225799,24.7726145 C60.1010646,22.247675 60.1010646,19.725138 60.110627,17.1977961 C60.1130176,16.7028983 59.9361139,16.4626567 59.4269184,16.4722664 C56.3526201,16.5227171 53.2639783,16.383377 50.2111953,16.6476428 C45.0953334,17.0896874 42.0401599,20.6524706 41.5142302,25.6062529 C41.3349359,27.3191757 41.3373265,29.0585251 41.3540606,30.7834599 C41.3612324,31.5954766 41.0910958,31.8164989 40.3284977,31.7732554 C39.2885912,31.7179999 38.2391223,31.7972796 37.1968253,31.7468288 C36.5322413,31.7155974 36.2860106,31.9534366 36.2907918,32.6116987 C36.3146977,35.5330368 36.32426,38.4567774 36.3123071,41.3781156 C36.3099165,41.9787196 36.5465849,42.1661081 37.1203264,42.1468888 C38.0789528,42.1108525 39.0399699,42.1372791 40.0009869,42.1372791 C41.3540606,42.1372791 41.3516701,42.1372791 41.3540606,43.5378878 C41.3612324,51.2256197 41.3779665,58.9133517 41.3612324,66.6010837 C41.3588418,67.3962835 41.5620419,67.6965855 42.4011389,67.682171 C45.1957382,67.6341227 47.9903375,67.6365251 50.7849368,67.682171 C51.6120808,67.6965855 51.8367962,67.4275149 51.8296245,66.6179006 C51.791375,62.7019621 51.8128903,58.7860237 51.8128903,54.8724876 M14.8065627,87 L14.2973671,87 C13.9746375,86.9255251 13.6542984,86.8174164 13.3267877,86.7813801 C12.0693375,86.6492472 10.7951532,86.6060037 9.54965603,86.3969935 C8.18701993,86.168764 6.84828973,85.7915846 5.32309354,85.436027 C5.70797847,85.0852743 5.8872727,84.9098979 6.08091046,84.7513384 C10.1735999,81.3687363 13.2239923,77.2269707 15.1388546,72.2443594 C15.3707418,71.6365481 15.3420547,71.2185277 14.9189204,70.7140203 C11.9043868,67.1320177 9.59507723,63.1247874 7.90732094,58.7571947 C5.00036394,51.2376318 4.28079646,43.4898394 5.71515024,35.5642683 C7.76866675,24.227266 13.4319736,15.0836698 22.669212,8.28242941 C30.6394379,2.41332653 39.6376173,-0.308611073 49.5490019,0.0277272011 C52.6926273,0.133433516 55.7908315,0.520222531 58.8101462,1.34184889 C70.0554799,4.39291751 78.8002568,10.9154776 84.8484486,20.9023219 C90.0049505,29.4188875 91.8457045,38.7186408 90.6480191,48.6238029 C89.7993598,55.6220415 87.3298807,62.002859 83.3591113,67.7950846 C78.6926803,74.6011298 72.5321308,79.6053628 64.9946016,82.8822586 C58.2674824,85.8035967 51.2248053,86.9039034 43.9335069,86.2144099 C39.417683,85.7867798 35.0524663,84.6864732 30.9095745,82.8077837 C30.1923976,82.4834575 29.6712491,82.5843589 29.0353522,82.9519286 C24.9570063,85.3014917 20.589399,86.6636617 15.8632033,86.7885874 C15.509396,86.798197 15.1579793,86.9255251 14.8065627,87" id="Fill-1" fill="#215EAB" mask="url(#mask-7)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

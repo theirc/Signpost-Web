@@ -74,15 +74,15 @@ class Article extends React.Component {
         const {
             direction, language
         } = this.props;
-
+        const { onNavigate } = this.props;
 		let next = null;
         let previous = null;
 
 
         return (
             <Placeholder>
-				<Article2 language={language} direction={direction} />
-				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
+				<Article2 language={language} direction={direction}  onNavigate={onNavigate} />
+				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }}  />
 			</Placeholder>
         );
     }
