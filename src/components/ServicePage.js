@@ -55,30 +55,34 @@ export default class ArticlePage extends Component {
                             <p>العلامات (tags): مساعدة قانونية، سجلات الأحوال المدنية، مفرق</p>                            
                             <div id="icons">
                                 <img src="/images/wifi.png" alt="Wifi"/>
-                                <img src="/images/toilet.png" alt="toilet"/>
+                                <img src="/images/wc.png" alt="toilet"/>
                                 <img src="/images/breastfeeding.png" alt="Breastfeeding"/>
-                                <img src="/images/wheelchair.png" alt="wheelchair"/>
+                                <img src="/images/handicap.png" alt="wheelchair"/>
                                 <img src="/images/free.png" alt="wheelchair"/>
                             </div>
                             <div id="info">
                                 <ul>
                                     <li className="telephone">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li className="whatsapp">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li className="facebook">
-                                    fb.me/khabrona.info1
+                                    <p>fb.me/khabrona.info1</p>
                                     </li>
                                     <li className="location">
-                                    <a href="/">حي الجنوبي</a><br/>
-                                    <p>العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول. </p>
+                                    <p><a href="/">حي الجنوبي</a><br/>
+                                        العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول.</p>
                                     </li>
                                 </ul>
+                                <div class="locationimage">
+                                    <img src="/images/servicelisting.png" alt="Al Janoubi Entrance"></img>
+                                    <p class="locationcaption">الجزء الأمامي من المبنى</p>
+                                </div>
                             </div>
                         </div>
-                        <img src="/images/servicelisting.png" alt="Al Janoubi Entrance"></img>
+                       
                         <div id="servicesDescr">
                             <h1>معلومات عن الخدمات المقدمة</h1>
                             <ul>
@@ -92,14 +96,17 @@ export default class ArticlePage extends Component {
                             <p>ماذا علي أن أحضر معي: بطاقة هويّة. (بطاقة تعريفك)</p>
                             <p>ملاحظات: أحرص على القدوم قبل بساعة حتى تتمكن من الاستفادة من هذه الخدمة.</p>
                             <p>عناوين أخرى: في<a href="/"> إربد</a> و <a href="/">رامثا</a></p>
-                            <b>المرافق:</b>
-                            <p>انترنت واي فاي: يوجد</p>
-                            <p>دورات مياه مختلطة: يوجد</p>
-                            <p>مساحة للإرضاع: يوجد</p>
-                            <p>مسارات ممهدة لمستعملي الكراسي المتحركة: نعم </p>
-                            <p>مجانية: نعم</p>
                         </div>
-                           
+                        <div id="addtlinfo">
+                            <b>المرافق:</b>
+                            <ul>
+                                <li class="wifi"><p>انترنت واي فاي: يوجد</p></li>
+                                <li class="wc"><p>دورات مياه مختلطة: يوجد</p></li>
+                                <li class="breastfeeding"><p>مساحة للإرضاع: يوجد</p></li>
+                                <li class="handicap"><p>مسارات ممهدة لمستعملي الكراسي المتحركة: نعم</p></li>
+                                <li class="free"><p>مجانية: نعم</p></li>
+                            </ul>
+                        </div>
                 </article>
                 <h3>معلومات ذات صله</h3>
                 <Slider {...settings} className="slider">

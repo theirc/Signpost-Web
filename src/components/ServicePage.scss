@@ -1,8 +1,13 @@
 @import "../shared/includes.scss";
 
 .ArticlePage {
+    article{
+        padding-top: 0px;
+        font-size: 12px;
+    }
     #generalinfo {
-        padding: 15px;
+        padding-bottom: 15px;
+        height: auto;
     }
 
     #audio{
@@ -28,39 +33,89 @@
 
     #info ul{
         padding-top: 5px;
+        padding-right: 10px;
+    }
+    #info li{
+        list-style: none;
+        height: 30px;
+    }
+    #info p{
+        margin-right: 30px;
+    }
+   .telephone {
+        background: url(/images/phone.png) no-repeat right top;
     }
 
-    #info li.telephone {
-        list-style-image:url(/images/phone.png);
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        padding-bottom: 15px;
+    .whatsapp {
+        background: url(/images/whatsapp.png) no-repeat right top;
     }
 
-    #info li.whatsapp {
-        list-style-image:url(/images/whatsapp.png);
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        padding-bottom: 15px;
+    .facebook {
+        background: url(/images/facebook.png) no-repeat right top;
     }
 
-    #info li.facebook {
-        list-style-image:url(/images/fb.png);
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        padding-bottom: 15px;
-    }
-
-    #info li.location {
-        list-style-image:url(/images/location.png);
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        padding-bottom: 15px;
+    .location {
+        background: url(/images/pin.png) no-repeat right top;
     }
     .location p{
         color: #5F6368;
+        margin:0px;
     }
-    article{
-        font-size: 12px;
+
+    .locationimage img{
+        padding-top: 10px;
     }
+
+    .locationcaption{
+        background-color: #d8d8d8;
+        margin:0px;
+        padding: 0px;
+    }
+    .locationcaption{
+        padding-right: 10px;
+        margin: 0px !important;
+    }
+
     #servicesDescr{
-        padding: 15px;
+        padding-right: 15px;
+    }
+
+    #addtlinfo ul{
+        padding-right: 15px;
+    }
+
+    #addtlinfo li{
+        list-style: none;
+        height: 30px;
+    }
+    #addtlinfo p{
+        margin-right: 30px;
+    }
+    #addtlinfo b{
+        padding-right: 15px;
+    }
+   .wifi {
+        background: url(/images/wifi.png) no-repeat right top;
+    }
+
+    .wc {
+        background: url(/images/wc.png) no-repeat right top;
+    }
+
+    .breastfeeding {
+        background: url(/images/breastfeeding.png) no-repeat right top;
+    }
+
+    .handicap {
+        background: url(/images/handicap.png) no-repeat right top;
+    }
+    .free {
+        background: url(/images/free.png) no-repeat right top;
+    }
+
+    h3{
+        padding-right: 15px;
+        margin-top: 0px;
     }
 
 }
