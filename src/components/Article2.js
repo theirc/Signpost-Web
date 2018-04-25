@@ -49,7 +49,7 @@ export default class ArticlePage extends Component {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           };
           const { onNavigate } = this.props;
@@ -218,7 +218,8 @@ export default class ArticlePage extends Component {
                     </div>                
                 
                 </article>
-
+                <h3>معلومات ذات صله</h3>
+                <div class="carousel">				
                 <Slider {...settings} className="slider">
                 <div className="container" onClick={() => onNavigate("https://web.facebook.com/khabrona.info1")}>                                                
                             <img src="/images/icons/follow-us.svg" />
@@ -241,6 +242,7 @@ export default class ArticlePage extends Component {
 						</div>                        
 					</div>                                    				
 				</Slider>
+                </div>
             </div>  
         );
     }

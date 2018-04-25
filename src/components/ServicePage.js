@@ -109,6 +109,7 @@ export default class ArticlePage extends Component {
                         </div>
                 </article>
                 <h3>معلومات ذات صله</h3>
+                <div class="carousel">
                 <Slider {...settings} className="slider">
                     <div className="container" onClick={() => onNavigate("https://web.facebook.com/khabrona.info1")}>                                                
                             <img src="/images/icons/follow-us.svg" />
@@ -131,6 +132,7 @@ export default class ArticlePage extends Component {
 						</div>                        
 					</div>
 				</Slider>
+                </div>
             </div>
         );
     }
