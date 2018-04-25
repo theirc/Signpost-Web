@@ -7,6 +7,7 @@
     }
     #generalinfo {
         padding-bottom: 15px;
+        height: auto;
     }
 
     #audio{
@@ -58,17 +59,25 @@
     }
     .location p{
         color: #5F6368;
-    }
-    .locationcaption{
-        background-color: #d8d8d8;
-    }
-    .locationcaption p{
-        padding-right: 10px;
         margin:0px;
     }
 
+    .locationimage img{
+        padding-top: 10px;
+    }
+
+    .locationcaption{
+        background-color: #d8d8d8;
+        margin:0px;
+        padding: 0px;
+    }
+    .locationcaption{
+        padding-right: 10px;
+        margin: 0px !important;
+    }
+
     #servicesDescr{
-        padding: 15px;
+        padding-right: 15px;
     }
 
     #addtlinfo ul{
@@ -102,6 +111,11 @@
     }
     .free {
         background: url(/images/free.png) no-repeat right top;
+    }
+
+    h3{
+        padding-right: 15px;
+        margin-top: 0px;
     }
 
 }

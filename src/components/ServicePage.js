@@ -54,45 +54,34 @@ export default class ArticlePage extends Component {
                             <p>العلامات (tags): مساعدة قانونية، سجلات الأحوال المدنية، مفرق</p>                            
                             <div id="icons">
                                 <img src="/images/wifi.png" alt="Wifi"/>
-                                <img src="/images/toilet.png" alt="toilet"/>
+                                <img src="/images/wc.png" alt="toilet"/>
                                 <img src="/images/breastfeeding.png" alt="Breastfeeding"/>
-                                <img src="/images/wheelchair.png" alt="wheelchair"/>
+                                <img src="/images/handicap.png" alt="wheelchair"/>
                                 <img src="/images/free.png" alt="wheelchair"/>
                             </div>
                             <div id="info">
                                 <ul>
-<<<<<<< HEAD
-                                    <li class="telephone">
-                                    <p>0770410202</p>
-                                    </li>
-                                    <li class="whatsapp">
-                                    <p>0770410202</p>
-                                    </li>
-                                    <li class="facebook">
-                                    <p>fb.me/khabrona.info1</p>
-                                    </li>
-                                    <li class="location">
-                                    <p><a href="/">حي الجنوبي</a></p><br/>
-=======
                                     <li className="telephone">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li className="whatsapp">
-                                    0770410202
+                                    <p>0770410202</p>
                                     </li>
                                     <li className="facebook">
-                                    fb.me/khabrona.info1
+                                    <p>fb.me/khabrona.info1</p>
                                     </li>
                                     <li className="location">
-                                    <a href="/">حي الجنوبي</a><br/>
->>>>>>> 0c9902368cfb9eb37eda4552dba6a4477a551b5f
-                                    <p>العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول. </p>
+                                    <p><a href="/">حي الجنوبي</a><br/>
+                                        العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول.</p>
                                     </li>
                                 </ul>
+                                <div class="locationimage">
+                                    <img src="/images/servicelisting.png" alt="Al Janoubi Entrance"></img>
+                                    <p class="locationcaption">الجزء الأمامي من المبنى</p>
+                                </div>
                             </div>
                         </div>
-                        <img src="/images/servicelisting.png" alt="Al Janoubi Entrance"></img>
-                        <div class="locationcaption"><p>الجزء الأمامي من المبنى</p></div>
+                       
                         <div id="servicesDescr">
                             <h1>معلومات عن الخدمات المقدمة</h1>
                             <ul>
