@@ -43,3 +43,5 @@ const mapDispatch = (d, p) => {
 };
 
 export default connect(mapState, mapDispatch)(Home);
+
+
