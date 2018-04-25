@@ -123,7 +123,7 @@ class Skeleton extends React.Component {
 							deviceType={deviceType}
 						/>
 					)}
-					{country && language && <BottomNavContainer match={match} />}
+					
 				</div>
 			</I18nextProvider>
 		);

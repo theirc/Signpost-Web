@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { NavigateBefore, NavigateNext, Share, Link } from "material-ui-icons";
 import { translate } from "react-i18next";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import "./ArticleFooter.css";
+import "./ShareArticleWidget.css";
 
 /**
  * 
@@ -25,7 +25,7 @@ class ShareArticleWidget extends Component {
 
 	Copiedlnk() {
 		this.setState(prevState => ({copied: !prevState.copied}));
-		setTimeout(() =>  {this.setState({copied: false})}, 3000);
+		setTimeout(() =>  {this.setState({copied: false})}, 2000);
 	};
 
 	share() {
@@ -49,34 +49,33 @@ class ShareArticleWidget extends Component {
     }	
 
     render() {
-		const { direction, t } = this.props;
+		const { direction, t, lastUpdated } = this.props;
 		const rtl = direction === "rtl";
 
 		return (
-            <div className="ArticleFooter">
-            <CopyToClipboard sharePage={this.sharePage} text={this.state.value}>
-				
-				<div className="selector">
-					{this.state.shareIN ? 
-						<div className="selector sharePage">						
-							{this.state.copied ? <h1>{t("Copied")}</h1> : <h1 onClick={() => this.Copiedlnk()}>{t("Copy Link")}</h1>}
-							<Link className="icon" />
-							<div className="share-bar-separator" />
-							<h1 onClick={() => this.sharePage()}>{t("Share this page")}</h1>					 	
-							<Share className="icon" />
-						</div>					
-					:
-					<div className="selector sharePage">
-						<h1 onClick={() => window.open('whatsapp://send?text='+encodeURIComponent(this.state.value))}>{t("Share on Whatsapp")}</h1>
-						<i className="MenuIcon fa fa-whatsapp" aria-hidden="true" />						
-						<div className="share-bar-separator" />
-						<h1 onClick={() => this.share()}>{t("Share on Facebook")}</h1>
-						<i className="MenuIcon fa fa-facebook-f" aria-hidden="true" />
+            <div className="ShareSelector">
+				<CopyToClipboard sharePage={this.sharePage} text={this.state.value}>				
+					<div className="selector">					
+						<div className="selector sharePage">													
+							<Link className="icon" onClick={() => this.Copiedlnk()} />
+							<img className="icon" src="/images/icons/whatsapp-icon.png" onClick={() => window.open('whatsapp://send?text='+encodeURIComponent(this.state.value))}/>
+							<img className="icon" src="/images/icons/facebook-icon.png" onClick={() => this.share()}/>
+							{lastUpdated && 
+								<div id="timestamp" className="timestamp">
+									{t("Last updated")+":"+lastUpdated}
+								</div>
+							}
+						</div>	
+						
 					</div>
-					}
+				</CopyToClipboard>
+				<div className={this.state.copied ? "snackbar-show" : "snackbar-hidden"}>
+					Copied
 				</div>
-			</CopyToClipboard>
-            </div>
+				
+				
+			</div>
+			
         )
     }
 }

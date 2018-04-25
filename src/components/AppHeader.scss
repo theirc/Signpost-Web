@@ -14,7 +14,7 @@ Less me
 	top: 0;
 	height: 64px;
 	box-shadow: 0 1px 1px 0;
-  @include brand-primary( 'background-color');
+  @include brand-colors( 'background-color');
 }
 
 .app-bar-container {
@@ -66,6 +66,7 @@ Less me
 	flex-direction: row;
 	.app-bar-selectors {
 		padding: 16px 5px;
+		padding-top: 25px;
 		text-transform: uppercase;
 		cursor: pointer;
 		font-size: 14px;
@@ -74,11 +75,11 @@ Less me
 		}
 		@media (min-width: 321px) {
 			font-size: 12px;
-			padding: 16px 8px;
+			padding: 16px 8px 8px;
 		}
 		@media (min-width: 960px) {
 			font-size: 14px;
-			padding: 16px 11px;
+			padding: 16px 11px 8px;
 		}
 
 		.rtl & {
@@ -124,10 +125,12 @@ Less me
 .headroom--unpinned {
 	@extend .headroom--scrolled;
 	position: fixed;
+	/*
 	-ms-transform: translateY(-65px);
 	-moz-transform: translateY(-65px);
 	-webkit-transform: translateY(-65px);
 	transform: translateY(-65px);
+	*/
 }
 
 .headroom--pinned {

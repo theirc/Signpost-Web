@@ -57,11 +57,7 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
-				<ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-
-                <div id="timestamp">
-                اخر تحديث: 4/19/18
-                </div>
+				<ShareArticleWidget language={this.props.language} direction={this.props.direction} lastUpdated={"4/19/18"} />
 
 				<div id="audio"><AudioPlayer src={"/audio/long-news.ogg"}/></div>
 

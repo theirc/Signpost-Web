@@ -98,8 +98,9 @@ class AppHeader extends Component {
         const noop = () => {
             console.log("noop");
         };
-
-        const items = [{
+		
+        const items = [
+			{
                 name: t('Registration'),
                 subItems: [{
                         href: '/jordan/mock/article1',
@@ -254,14 +255,18 @@ class AppHeader extends Component {
 						<div className="app-bar-container" id="outer-container">
 							<Menu right width={ '80%' } ref={(r)=> { this.menu= r;}} outerContainerId={ "outer-container" }>							
 							<div className="CategoryList">
-				<ul>
-
-	{items.map((c, i) => (
+					<ul>
+						<li>
+						<label key="a-1" htmlFor={`SubMenu-Home`}  className="container">
+							<strong className="category-name" onClick={ onGoHome }>{t("Home")}</strong>
+						</label>
+						</li>
+					{items.map((c, i) => (
 						<li key={`Menu-${i}`}>
-							{i > 0 && <hr className="line" />}
+							<hr className="line" />
 							<input type="checkbox" name={"tab"} id={`SubMenu-${i}`} />
 								<label key="a-1" htmlFor={`SubMenu-${i}`} className="container">
-									<strong className="category-name">{c.name}</strong>
+									<strong className="category-name" onClick={() => c.onClick}>{c.name}</strong>
 								</label>
 								{c.subItems && (
 									<ul key="a-2">
@@ -291,15 +296,13 @@ class AppHeader extends Component {
 											<span className="app-bar-selectors" color="contrast" onClick={onChangeCountry || noop}>
 												{(country && country.fields.name) || " "}
 											</span>
-										)}
-										{!disableLanguageSelector && !disableCountrySelector && <div className="app-bar-separator" />}
-										{ /* !disableLanguageSelector && (
+										)}										
+										{  !disableLanguageSelector && (
 											<span className="app-bar-selectors" color="contrast" onClick={onChangeLanguage}>
-												{language || " "}
+												<img src="/images/icons/language-switch.svg"/>
 											</span>
-										)*/}
-
-										{/* <div className="app-bar-separator" />*/}
+										)}
+										{ <div className="app-bar-separator" />}
 										<IconButton
 											className={`search-close ${[this.state.search && "active"].join(" ")}`}
 											color="contrast"

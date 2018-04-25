@@ -14,7 +14,15 @@ main {
   overflow: hidden;
 }
 .bm-menu-wrap{
-    height: 80vh !important; 
+    /* Firefox */
+    height: -moz-calc(100% - 72px);
+    /* WebKit */
+    height: -webkit-calc(100% - 72px);
+    /* Opera */
+    height: -o-calc(100% - 72px);
+    /* Standard */
+    height: calc(100% - 72px);
+    
     overflow-x: scroll;
     padding-bottom: 15px;
     background-color: white;

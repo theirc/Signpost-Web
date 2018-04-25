@@ -44,10 +44,7 @@ export default class ArticlePage extends Component {
 					<Helmet>
 			    <title> أكثر من 10,000 لاجئ استفادوا من برنامج مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</title>
                 </Helmet>
-                <ShareArticleWidget language={this.props.language} direction={this.props.direction} />
-                <div id="timestamp">
-                اخر تحديث: 3/19/18
-                </div>
+                <ShareArticleWidget language={this.props.language} direction={this.props.direction} lastUpdated={"3/19/18"} />
 
 				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
 
@@ -64,6 +61,7 @@ export default class ArticlePage extends Component {
                             </div>
                             <div id="info">
                                 <ul>
+<<<<<<< HEAD
                                     <li class="telephone">
                                     <p>0770410202</p>
                                     </li>
@@ -75,6 +73,19 @@ export default class ArticlePage extends Component {
                                     </li>
                                     <li class="location">
                                     <p><a href="/">حي الجنوبي</a></p><br/>
+=======
+                                    <li className="telephone">
+                                    0770410202
+                                    </li>
+                                    <li className="whatsapp">
+                                    0770410202
+                                    </li>
+                                    <li className="facebook">
+                                    fb.me/khabrona.info1
+                                    </li>
+                                    <li className="location">
+                                    <a href="/">حي الجنوبي</a><br/>
+>>>>>>> 0c9902368cfb9eb37eda4552dba6a4477a551b5f
                                     <p>العنوان: حي الجنوبي، على الطرف المقابل من استاد البلدي وقرب رابطة حمامات السلام. الطابق الأول. </p>
                                     </li>
                                 </ul>
@@ -107,25 +118,26 @@ export default class ArticlePage extends Component {
                             </ul>
                         </div>
                 </article>
+                <h3>معلومات ذات صله</h3>
                 <Slider {...settings} className="slider">
 					<div className="container">
 						<img src="/images/related/example1.jpg" />
 						<div className="slide-content">
-							<a href="/jordan/mock/article1"><h4 class="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
+							<a href="/jordan/mock/article1"><h4 className="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4></a>							
 							<h5>1 منذ يوم</h5>
 						</div>
 					</div>
 					<div className="container">
 						<img src="/images/related/example2.jpg" />
 						<div className="slide-content">
-							<h4 class="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
+							<h4 className="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
 							<h5>2 منذ يوم</h5>
 						</div>
 					</div>	
                     <div className="container">
 						<img src="/images/related/example3.jpg"/>
 						<div className="slide-content">
-							<h4 class="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
+							<h4 className="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
 							<h5>قبل 12 ساعة</h5>
 						</div>				
 					</div>									
