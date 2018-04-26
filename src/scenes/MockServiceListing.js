@@ -77,11 +77,11 @@ class Article extends React.Component {
         const { t } = this.props;
 		let next = null;
         let previous = null;
-
+        const { onNavigate } = this.props;
 
         return (
             <Placeholder>
-				<ServicePage language={language} direction={direction} t={t} />
+				<ServicePage language={language} direction={direction} t={t}  onNavigate={onNavigate} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
         );

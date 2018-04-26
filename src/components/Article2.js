@@ -52,6 +52,7 @@ export default class ArticlePage extends Component {
             slidesToShow: 2,
             slidesToScroll: 1
           };
+          const { onNavigate } = this.props;
         return (
             <div className="ArticlePage">
 					<Helmet>
@@ -217,31 +218,31 @@ export default class ArticlePage extends Component {
                     </div>                
                 
                 </article>
-
+                <h3>معلومات ذات صله</h3>
+                <div class="carousel">				
                 <Slider {...settings} className="slider">
-					<div className="container">
+                <div className="container" onClick={() => onNavigate("https://web.facebook.com/khabrona.info1")}>                                                
+                            <img src="/images/icons/follow-us.svg" />
+                            <div className="slide-content">
+                                <h4 className="slider-title">Follow us on Facebook</h4>							
+                            </div>
+					</div>
+                    <div className="container" onClick={() => onNavigate("/jordan/mock/article1")} >                        						
+                        <img src="/images/article2.png" />
+						<div className="slide-content">
+							<h4 className="slider-title">الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4>
+							<h5>1 منذ يوم</h5>
+						</div>                 
+					</div>
+					<div className="container" onClick={() => onNavigate("/jordan/mock/service-listing")}>                        
 						<img src="/images/servicelisting.png" />
 						<div className="slide-content">
-							<a href="/jordan/mock/service-listing"><h4 class="slider-title">مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h4></a>							
+							<h4 class="slider-title">مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h4>
 							<h5>1 منذ يوم</h5>
-						</div>
-					</div>
-					<div className="container">
-						<img src="/images/related/example2.jpg" />
-						<div className="slide-content">
-							<h4 class="slider-title" title="Second Article Very Loong Title">عقود زواج</h4>
-							<h5>2 منذ يوم</h5>
-						</div>
-					</div>	
-                    <div className="container">
-						<img src="/images/related/example3.jpg"/>
-						<div className="slide-content">
-							<h4 class="slider-title">إصدار شهادة الميلاد للأطفال بعمر من يوم إلى 12 شهر</h4>		
-							<h5>قبل 12 ساعة</h5>
-						</div>				
-					</div>									
-					
+						</div>                        
+					</div>                                    				
 				</Slider>
+                </div>
             </div>  
         );
     }

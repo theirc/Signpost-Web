@@ -166,8 +166,8 @@ export default class ArticlePage extends Component {
 					<AudioPlayer src={"/audio/background.ogg"}/>
 					<div dangerouslySetInnerHTML={{ __html: html }} />
 				</article>
-        <div class="carousel">
-				<h3>معلومات ذات صله</h3>
+                <h3>معلومات ذات صله</h3>
+        <div class="carousel">				
 				<Slider {...settings} className="slider">
 					<div className="container">
 						<img src="/images/related/example1.jpg" />
