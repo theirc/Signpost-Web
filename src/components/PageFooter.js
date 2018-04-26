@@ -14,7 +14,7 @@ class PageFooter extends Component {
 			<footer className="Footer">
 				<div className="light">
 					<p>{t("Can't find specific information?")}</p>
-					<a href={"mailto:jo-khabrona-info@mercycorps.org"}>
+					<a href={"http://m.me/khabrona.info1"} target="_blank">
 						<h3>{t("Ask us a question")}</h3>
 					</a>
 				</div>
