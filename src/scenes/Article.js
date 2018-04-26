@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { ArticlePage, ArticleFooter,  } from "../components";
+import { ArticlePage, ArticleFooter, PageFooter } from "../components";
 import PropTypes from "prop-types";
 import { actions } from "../store";
 import { push } from "react-router-redux";
@@ -79,6 +79,7 @@ class Article extends React.Component {
 				<ArticlePage key={"Article"} direction={direction} category={category} other={other} article={article} loading={loading} onNavigate={onNavigate} />
 				<RelatedArticleContainer articles={category.fields.article} />
 				<ArticleFooter key={"ArticleFooter"} onNavigateTo={onNavigateTo(category, country)} language={language} {...{ direction, previous, next }} />
+				<PageFooter></PageFooter>
 			</Placeholder>
 		);
 	}

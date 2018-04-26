@@ -19,7 +19,7 @@ import Placeholder from "../shared/placeholder";
 import _ from "lodash";
 const Promise = require("bluebird");
 
-class HomePage extends React.Component {
+class HomePageScene extends React.Component {
     static propTypes = {
         match: PropTypes.shape({
             params: PropTypes.shape({
@@ -123,4 +123,4 @@ const mapDispatch = (d, p) => {
     };
 };
 
-export default connect(mapState, mapDispatch)(HomePage);
+export default connect(mapState, mapDispatch)(HomePageScene);

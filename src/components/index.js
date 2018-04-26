@@ -24,6 +24,7 @@ import LocalGuideWidget from "./LocalGuideWidget";
 import ArticleWidget from "./ArticleWidget";
 import CategoryWidget from "./CategoryWidget";
 import ShareArticleWidget from "./ShareArticleWidget";
+import PageFooter from "./PageFooter";
 
 export {
 	AppHeader,
@@ -50,5 +51,6 @@ export {
 	LocalGuideWidget,
 	ArticleWidget,
 	CategoryWidget,
-	ShareArticleWidget
+	ShareArticleWidget,
+	PageFooter
 };

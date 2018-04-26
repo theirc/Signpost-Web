@@ -54,6 +54,8 @@ class Skeleton extends React.Component {
 		const { errorMessage } = this.state;
 		const { config } = this.context;
 
+		console.log("children", children);
+
 		let notifications = [];
 		const notificationType = n => {
 			switch (n.fields.type) {
@@ -112,18 +114,7 @@ class Skeleton extends React.Component {
 						onNavigate={onNavigate}
 					/>
 					{notifications}
-					{children}
-					{showFooter && (
-						<Footer
-							questionLink={config.questionLink}
-							disableCountrySelector={!!config.disableCountrySelector}
-							disableLanguageSelector={!!config.disableLanguageSelector}
-							onChangeLocation={onChangeLocation}
-							onChangeLanguage={onChangeLanguage.bind(this, router.location.pathname)}
-							deviceType={deviceType}
-						/>
-					)}
-					
+					{children}					
 				</div>
 			</I18nextProvider>
 		);
