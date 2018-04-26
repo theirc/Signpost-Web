@@ -39,14 +39,14 @@ export default class HomePage extends Component {
             <div className="HomePage">
 
 				<Helmet>
-			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
+			    <title> لتلقي آخر الأخبار عن السوريين في الأردن</title>
                 </Helmet>
-                
+
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction}/>
 
                 <body>
                     <div class="divider"></div>
-                    <div class="sectionheader"><h1>آخر الأخبار</h1></div>
+                    <div class="sectionheader"><h1>لتلقي آخر الأخبار عن السوريين في الأردن</h1></div>
             
                     <div id="news-articles">
                         <div class="news-article-1">
