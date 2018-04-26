@@ -3,7 +3,7 @@ import {
     connect
 } from "react-redux";
 import {
-    ArticleFooter,
+    ArticleFooter, PageFooter
 } from "../components";
 import Article2 from "../components/Article2";
 import PropTypes from "prop-types";
@@ -83,6 +83,7 @@ class Article extends React.Component {
             <Placeholder>
 				<Article2 language={language} direction={direction}  onNavigate={onNavigate} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }}  />
+                <PageFooter></PageFooter>
 			</Placeholder>
         );
     }

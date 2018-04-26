@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="22px" viewBox="0 0 9 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>F1DC429B-F880-48F3-9AF0-1996FEEDCF71</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="KI-icons" transform="translate(-557.000000, -171.000000)">
+            <g id="ic_pregnant_woman_black_24px" transform="translate(549.000000, 169.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="a"></g>
+                <path d="M9.125,4.25 C9.125,3.00125 10.12625,2 11.375,2 C12.62375,2 13.625,3.00125 13.625,4.25 C13.625,5.49875 12.62375,6.5 11.375,6.5 C10.12625,6.5 9.125,5.49875 9.125,4.25 Z M17,14.375 C16.98875,12.8675 16.06625,11.55125 14.75,11 C14.75,9.1325 13.2425,7.625 11.375,7.625 C9.5075,7.625 8,9.1325 8,11 L8,18.875 L10.25,18.875 L10.25,24.5 L13.625,24.5 L13.625,18.875 L17,18.875 L17,14.375 Z" id="Shape" fill="#000000" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

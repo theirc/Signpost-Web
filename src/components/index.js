@@ -3,6 +3,8 @@ import AudioPlayer from "./AudioPlayer";
 import BottomNav from "./BottomNav";
 import WarningDialog from "./WarningDialog";
 import Footer from "./Footer";
+import HomePage from "./HomePage";
+import HPFooter from "./HPFooter";
 import ArticlePage from "./ArticlePage";
 import ArticleList from "./ArticleList";
 import ArticleFooter from "./ArticleFooter";
@@ -22,6 +24,7 @@ import LocalGuideWidget from "./LocalGuideWidget";
 import ArticleWidget from "./ArticleWidget";
 import CategoryWidget from "./CategoryWidget";
 import ShareArticleWidget from "./ShareArticleWidget";
+import PageFooter from "./PageFooter";
 
 export {
 	AppHeader,
@@ -34,6 +37,8 @@ export {
 	CategoryList,
 	CountrySelector,
 	LanguageSelector,
+	HomePage,
+	HPFooter,
 	HomeWidget,
 	HomeWidgetCollection,
 	SearchPage,
@@ -46,5 +51,6 @@ export {
 	LocalGuideWidget,
 	ArticleWidget,
 	CategoryWidget,
-	ShareArticleWidget
+	ShareArticleWidget,
+	PageFooter
 };

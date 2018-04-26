@@ -173,7 +173,7 @@
         }
     }
 
-    .news-articles{
+    #news-articles{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -205,7 +205,7 @@
 
     }
     
-    .what-we-can-help-with{
+    #what-we-can-help-with{
         ul{
             padding-right: 0px;
         }
@@ -234,8 +234,46 @@
         
     }
 
-    .find-a-service{
+    #find-a-service{
+        display: flex;
+        flex-wrap: wrap;
         
+        [class^="by-"]{
+            position: relative;
+            text-align: center;
+            img{
+                width: 160px;
+                height: 71px;
+                margin-bottom: 5px;
+                margin-right: 5px;
+            }
+            p {
+                position: absolute;
+                margin: 0px;
+                color: white;
+                font-size: 14px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+            }
+            
+        }
+        
+    }
+
+    #about-us{
+        p{
+            color: rgb(0, 0, 0.7);
+            font-size: 12px;
+            margin-top: 0px;
+        }
+    }
+
+    #FAQ{
+
     }
     
 

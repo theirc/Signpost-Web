@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>75819548-6580-4491-BB1E-04BCD5E1B968</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="KI-icons" transform="translate(-465.000000, -127.000000)">
+            <g id="ic_help_outline_24dp" transform="translate(461.000000, 125.000000)">
+                <g id="Group">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <g id="worker" transform="translate(4.000000, 2.500000)" fill="#000000" fill-rule="nonzero">
+                        <path d="M8,13 C3.58,13 0,14.79 0,17 L0,19 L16,19 L16,17 C16,14.79 12.42,13 8,13 Z M4,7 C4,9.209 5.791,11 8,11 C10.209,11 12,9.209 12,7 L4,7 Z M7.5,0 C7.2,0 7,0.21 7,0.5 L7,3.5 L6,3.5 L6,1 C6,1 3.75,1.86 3.75,4.75 C3.75,4.75 3,4.89 3,6 L13,6 C12.95,4.89 12.25,4.75 12.25,4.75 C12.25,1.86 10,1 10,1 L10,3.5 L9,3.5 L9,0.5 C9,0.21 8.81,0 8.5,0 L7.5,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

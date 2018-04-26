@@ -3,9 +3,11 @@ import {
     connect
 } from "react-redux";
 import {
-    ArticleFooter,
+    HomePage,
 } from "../components";
-import Article1 from "../components/HomePage";
+import {
+    HPFooter,
+} from "../components";
 import PropTypes from "prop-types";
 import {
     actions
@@ -15,10 +17,9 @@ import {
 } from "react-router-redux";
 import Placeholder from "../shared/placeholder";
 import _ from "lodash";
-import RelatedArticleContainer from "../containers/RelatedArticleContainer";
 const Promise = require("bluebird");
 
-class Article extends React.Component {
+class HomePageScene extends React.Component {
     static propTypes = {
         match: PropTypes.shape({
             params: PropTypes.shape({
@@ -52,10 +53,10 @@ class Article extends React.Component {
     componentWillUnmount() {}
 
     componentWillUpdate(nextProps, b) {
-        const articleChanged = this.props.match && nextProps.match && this.props.match.params.article !== nextProps.match.params.article;
+        const homepageChanged = this.props.match && nextProps.match && this.props.match.params.article !== nextProps.match.params.article;
         const categoryChanged = this.props.category !== nextProps.category;
 
-        if (articleChanged || categoryChanged) {
+        if (homepageChanged || categoryChanged) {
             this.setState({
                 loading: true
             });
@@ -81,8 +82,8 @@ class Article extends React.Component {
 
         return (
             <Placeholder>
-				<Article1 language={language} direction={direction} />
-				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
+				<HomePage language={language} direction={direction} />
+				<HPFooter key={"HPFooter"} language={language} {...{ direction, previous, next }} />
 			</Placeholder>
         );
     }
@@ -122,4 +123,4 @@ const mapDispatch = (d, p) => {
     };
 };
 
-export default connect(mapState, mapDispatch)(Article);
+export default connect(mapState, mapDispatch)(HomePageScene);

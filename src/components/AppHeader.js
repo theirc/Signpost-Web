@@ -101,7 +101,8 @@ class AppHeader extends Component {
 		
         const items = [
 			{
-                name: t('Registration'),
+				name: t('Registration'),
+				icon: "registration.svg",
                 subItems: [{
                         href: '/jordan/mock/article1',
                         name: t("Amnesty campaign"),
@@ -117,7 +118,8 @@ class AppHeader extends Component {
                 ]
             },
             {
-                name: t('Vital records'),
+				name: t('Vital records'),
+				icon: "vital-records.svg",
                 subItems: [{
                         href: '#',
                         name: t("Birth certificates")
@@ -137,11 +139,12 @@ class AppHeader extends Component {
                 ]
             },
             {
-                name: t('Legal assistance'),
-
+				name: t('Legal assistance'),
+				icon: "legal-assistance.svg"
             },
             {
-                name: t('Healthcare'),
+				name: t('Healthcare'),
+				icon: "healthcare.svg",
                 subItems: [{
                         href: '#',
                         name: t("Primary care")
@@ -164,7 +167,8 @@ class AppHeader extends Component {
                     },
                 ]
             }, {
-                name: t("Education"),
+				name: t("Education"),
+				icon: "education.svg",
                 subItems: [{
                         href: '#',
                         name: t("For minors"),
@@ -184,7 +188,8 @@ class AppHeader extends Component {
 
                 ]
             }, {
-                name: t("Work Options"),
+				name: t("Work Options"),
+				icon: "work-options.svg",
                 subItems: [{
                         href: '#',
                         name: t("Legal rights"),
@@ -201,7 +206,8 @@ class AppHeader extends Component {
 
                 ]
             }, {
-                name: t("Cash assistance"),
+				name: t("Cash assistance"),
+				icon: "cash-assistance.svg",
                 subItems: [
 
                     {
@@ -221,7 +227,8 @@ class AppHeader extends Component {
 
                 ]
             }, {
-                name: t("Women’s programs"),
+				name: t("Women’s programs"),
+				icon: "womens-programs.svg",
                 subItems: [
 
                     {
@@ -238,8 +245,8 @@ class AppHeader extends Component {
             },
 
             {
-                name: t('Transportation options'),
-
+				name: t('Transportation options'),
+				icon: "transportation-options.svg"
             },
         ]
         
@@ -258,6 +265,7 @@ class AppHeader extends Component {
 					<ul>
 						<li>
 						<label key="a-1" htmlFor={`SubMenu-Home`}  className="container">
+							<img className="menu-icon" src="/images/icons/home.svg"/>
 							<strong className="category-name" onClick={ onGoHome }>{t("Home")}</strong>
 						</label>
 						</li>
@@ -266,6 +274,7 @@ class AppHeader extends Component {
 							<hr className="line" />
 							<input type="checkbox" name={"tab"} id={`SubMenu-${i}`} />
 								<label key="a-1" htmlFor={`SubMenu-${i}`} className="container">
+									<img className="menu-icon"  src={"/images/icons/"+c.icon}/>
 									<strong className="category-name" onClick={() => c.onClick}>{c.name}</strong>
 								</label>
 								{c.subItems && (

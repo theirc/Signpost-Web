@@ -3,7 +3,7 @@ import {
     connect
 } from "react-redux";
 import {
-    ArticleFooter,
+    ArticleFooter, PageFooter
 } from "../components";
 import ServicePage from "../components/ServicePage";
 import PropTypes from "prop-types";
@@ -83,6 +83,7 @@ class Article extends React.Component {
             <Placeholder>
 				<ServicePage language={language} direction={direction} t={t}  onNavigate={onNavigate} />
 				<ArticleFooter key={"ArticleFooter"} language={language} {...{ direction, previous, next }} />
+                <PageFooter></PageFooter>
 			</Placeholder>
         );
     }
