@@ -54,7 +54,7 @@ export default class ArticlePage extends Component {
             slidesToShow: 2,
             slidesToScroll: 1
           };
-        const { onNavigate } = this.props;
+        const { onNavigate, onNavigateTo } = this.props;
         return (
             <div className="ArticlePage">
 
@@ -97,8 +97,8 @@ export default class ArticlePage extends Component {
                 </article>
                 <h3>معلومات ذات صله</h3>
                 <div class="carousel">				
-                <Slider {...settings} className="slider">
-                    <div className="container" onClick={() => onNavigate("https://web.facebook.com/khabrona.info1")}>                                                
+                <Slider {...settings} className="slider">                    
+                    <div className="container" onClick={() => {window.location.replace("https://web.facebook.com/khabrona.info1")}}>                                                
                             <img src="/images/icons/follow-us.svg" />
                             <div className="slide-content">
                                 <h4 className="slider-title">Follow us on Facebook</h4>							
