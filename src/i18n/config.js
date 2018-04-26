@@ -285,7 +285,9 @@ export default {
 			"Support groups": "مجموعات دعم (Support groups)",
 			"Transportation options": "المواصلات والتنقل",
 			"Copy Link": "انسخ الرابط",
-       "Copied": "منسوخ",
+			"Copied": "منسوخ",
+			"News Updates": "لتلقي آخر الأخبار عن السوريين في الأردن",
+			"Follow Us": "تابعنا علي فيسبوك",  
 
 		},
 	},

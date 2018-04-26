@@ -13,9 +13,9 @@ class Footer extends Component {
 		return (
 			<footer className="Footer">
 				<div className="light">
-					<p>{t("To receive news updates on Syrians in Jordan")}</p>
+					<p>{t("News Updates")}</p>
 					<a href="fb.me/khabrona.info1">
-						<h3>{t("Follow us on Facebook")}</h3>
+						<h3>{t("Follow Us")}</h3>
 					</a>
 				</div>
 				<div className="dark">
