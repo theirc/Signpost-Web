@@ -41,13 +41,14 @@ export default class HomePage extends Component {
 				<Helmet>
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
+                
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction}/>
 
                 <body>
                     <div class="divider"></div>
                     <div class="sectionheader"><h1>آخر الأخبار</h1></div>
             
-                    <div class="news-articles">
+                    <div id="news-articles">
                         <div class="news-article-1">
                             <img src="/images/article1.png" />
                             <div class="headlines">
@@ -82,7 +83,7 @@ export default class HomePage extends Component {
 
                     <div class="sectionheader"><h1>بماذا نستطيع مساعدتك؟</h1></div>
 
-                    <div class="what-we-can-help-with">
+                    <div id="what-we-can-help-with">
                         <ul>
                             <li class="health"><p>الصحة</p></li>
                             <li class="vitalrecords"><p>سجلات الأحوال المدنيّة</p></li>
@@ -100,22 +101,30 @@ export default class HomePage extends Component {
 
                     <div class="sectionheader"><h1>البحث عن خدمة</h1></div>
 
-                    <div class="find-a-service">
-                        <div id="by-location">
-                            <img src="/images/bylocation.png"/>
-                            <h4>حسب الموقع</h4>
+                    <div id="find-a-service">
+                        <div class="by-location">
+                            <a href="/">
+                                <img src="/images/bylocation.png" alt="by location"/>
+                                <p>حسب الموقع</p>
+                            </a>
                         </div>
-                        <div id="by-category">
-                            <img src="/images/bycategory.png"/>
-                            <p>حسب القسم</p>
+                        <div class="by-category">
+                            <a href="/">
+                                <img src="/images/bycategory.png" alt="bycategory"/>
+                                <p>حسب القسم</p>
+                            </a>
                         </div>
-                        <div id="by-free-service">
-                            <img src="/images/freeservices.png"/>
-                            <p>الخدمات المجانيّة</p>
+                        <div class="by-free-service">
+                            <a href="/">
+                                <img src="/images/freeservices.png" alt="free services"/>
+                                <p>الخدمات المجانيّة</p>
+                            </a>
                         </div>
-                        <div id="by-all-services">
-                            <img src="/images/allservices.png"/>
-                            <p>كل الخدمات</p>
+                        <div class="by-all-services">
+                            <a href="/">
+                                <img src="/images/allservices.png" alt="all services"/>
+                                <p>كل الخدمات</p>
+                            </a>
                         </div>
 
                     </div>
@@ -126,8 +135,39 @@ export default class HomePage extends Component {
                     </div>
 
                     <div class="divider"></div>
+
+                    <div class="sectionheader"><h1>عن خبرونا</h1></div>
+
+                    <div id="about-us">
+                        <img src="/images/aboutus.png" alt="About Us Video"/>
+                        <h2>أهلاً وسهلاً في خبرونا!</h2>
+                        <p>
+                        موقع خبرونا يقدّم معلومات للاجئين في الأردن. لدينا صفحة على الفيسبوك أيضاً حيث نشارك فيها آخر الأخبار والمستجدات.
+                        </p>
+                    </div>
+
+                    <div class="seemore">
+                        <img class="see-more-icon" src="/images/seemoreicon.png"/>
+                        <p>إقرأ المزيد</p>  
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="sectionheader"><h1>أسئلة شائعة (أسئلة وأجوبة)</h1></div>
+                    <div id="FAQ">
+                        <ul>
+                            <li><a href="/">كيف أحصل على عقد زواج؟</a></li>
+                            <li><a href="/">كيف أحصل على شهادة ميلاد؟</a></li>
+                            <li><a href="/">ماذا عليّ أن أفعل في حالات الطوارئ الصحيّة؟</a></li>
+                            <li><a href="/">كيف أحصل على المساعدة الماليّة؟</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="seemore">
+                        <img class="see-more-icon" src="/images/seemoreicon.png"/>
+                        <p>إقرأ المزيد</p>  
+                    </div>      
                 </body>
-                
             </div>
         );
     }
