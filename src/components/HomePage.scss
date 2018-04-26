@@ -125,6 +125,7 @@
 	body {
         background-color: #ffffff;
         padding: 15px;
+        text-decoration: none;
 		img {
 			max-width: 100%;
 			margin: 0px;
@@ -177,6 +178,9 @@
         display: flex;
         flex-direction: column;
         height: auto;
+        a{
+            border-bottom: none;
+        }
         p{
             padding: 0px;
             font-size: 10px;

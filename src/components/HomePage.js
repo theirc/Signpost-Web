@@ -39,38 +39,44 @@ export default class HomePage extends Component {
             <div className="HomePage">
 
 				<Helmet>
-			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
+			    <title> لتلقي آخر الأخبار عن السوريين في الأردن</title>
                 </Helmet>
-                
+
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction}/>
 
                 <body>
                     <div class="divider"></div>
-                    <div class="sectionheader"><h1>آخر الأخبار</h1></div>
+                    <div class="sectionheader"><h1>لتلقي آخر الأخبار عن السوريين في الأردن</h1></div>
             
                     <div id="news-articles">
                         <div class="news-article-1">
-                            <img src="/images/article1.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/article1">
+                                <img src="/images/article1.png" />
+                                <div class="headlines">
+                                    <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
+                                    <p>2018 27 أيلول سبتمبر</p>
+                                </div>
+                            </a>
                         </div>
                         
                         <div class="news-article-2">
-                            <img src="/images/article2.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/article2">
+                                <img src="/images/article2.png" />
+                                    <div class="headlines">
+                                    <h4> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4>
+                                        <p>2018 27 أيلول سبتمبر</p>
+                                    </div>
+                            </a>
                         </div>
 
                         <div class="news-article-3">
-                            <img src="/images/servicelisting.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج مفوضيّة (UNHCR) للعفو المخصص للاجئين غير المسجلين</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/servicelisting">
+                                <img src="/images/servicelisting.png" />
+                                <div class="headlines">
+                                    <h4>مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h4>
+                                    <p>2018 27 أيلول سبتمبر</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
