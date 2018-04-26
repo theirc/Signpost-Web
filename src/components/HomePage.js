@@ -50,27 +50,33 @@ export default class HomePage extends Component {
             
                     <div id="news-articles">
                         <div class="news-article-1">
-                            <img src="/images/article1.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/article1">
+                                <img src="/images/article1.png" />
+                                <div class="headlines">
+                                    <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
+                                    <p>2018 27 أيلول سبتمبر</p>
+                                </div>
+                            </a>
                         </div>
                         
                         <div class="news-article-2">
-                            <img src="/images/article2.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج العفو</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/article2">
+                                <img src="/images/article2.png" />
+                                    <div class="headlines">
+                                    <h4> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</h4>
+                                        <p>2018 27 أيلول سبتمبر</p>
+                                    </div>
+                            </a>
                         </div>
 
                         <div class="news-article-3">
-                            <img src="/images/servicelisting.png" />
-                            <div class="headlines">
-                                <h4>أكثر من 10,000 لاجئ استفادوا من برنامج مفوضيّة (UNHCR) للعفو المخصص للاجئين غير المسجلين</h4>
-                                <p>2018 27 أيلول سبتمبر</p>
-                            </div>
+                            <a href="/jordan/mock/servicelisting">
+                                <img src="/images/servicelisting.png" />
+                                <div class="headlines">
+                                    <h4>مزوّد خدمات قانونية تابع لميرسي كور (مفرق Mafraq)</h4>
+                                    <p>2018 27 أيلول سبتمبر</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
