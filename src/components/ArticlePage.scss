@@ -151,6 +151,8 @@
 	}
 }
 	article {
+        padding:10px 10px 5px 10px;
+
 
 		img {
 			max-width: 100%;
@@ -176,6 +178,14 @@
 		}
 	}
 }
+
+
+#audio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
 .carousel{
 	.slick-list{
 		height:225px;
@@ -225,4 +235,13 @@
 }
 .slick-slide{
 	margin-right: 10px;
+}
+
+
+audio {
+	margin: auto;
+    margin-top: 10px;
+	margin-bottom: 5px;
+	
+	width: 100%;
 }

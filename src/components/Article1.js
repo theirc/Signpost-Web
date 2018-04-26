@@ -44,7 +44,6 @@ export default class ArticlePage extends Component {
         }
         return null;
     }
-    
 
     render() {
         let settings = {
@@ -53,8 +52,10 @@ export default class ArticlePage extends Component {
             speed: 500,
             slidesToShow: 2,
             slidesToScroll: 1
-          };
-        const { onNavigate } = this.props;
+        };
+        const {
+            onNavigate
+        } = this.props;
         return (
             <div className="ArticlePage">
 
@@ -62,7 +63,14 @@ export default class ArticlePage extends Component {
 			    <title> الوضع القانوني لبعض اللاجئين السوريين غير المسجلين</title>
                 </Helmet>
                 <ShareArticleWidget language={this.props.language} direction={this.props.direction} lastUpdated={"4/19/18"}/>
-				<div id="audio"><AudioPlayer src={"/audio/short-news.ogg"}/></div>
+				<div id="audio">
+                
+                <audio controls>
+                <source src="/audio/short-news.ogg" type="audio/ogg"></source>
+                Your browser does not support the audio element.
+            </audio>
+                
+</div>
 
                 <article>
                     <div id="article-ctn">

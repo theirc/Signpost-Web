@@ -21,14 +21,6 @@ class Footer extends Component {
 				<div className="dark">
 					{(!disableCountrySelector || !disableLanguageSelector) && (
 						<div className="button-container">
-							{!disableCountrySelector && (
-								<div className="button left" onClick={onChangeLocation}>
-									<div className="icon-container">
-										<MyLocation />
-									</div>
-									<span>{t("Change Location")}</span>
-								</div>
-							)}
 							{!disableLanguageSelector && (
 								<div className="button" onClick={onChangeLanguage}>
 									<div className="icon-container">

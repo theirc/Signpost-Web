@@ -1,44 +1,39 @@
 @import "../shared/includes.scss";
 
 .ArticlePage {
-    h1{
-        font-size:20px;
-        margin: 0px;
-        padding:0px;
-    }
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
 
-    #topthird p {
-        font-size: 14px;
-        font-weight: 500;
-    }
+  #topthird p {
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-    #topthird * {
-        padding-right: 10px;
-    }
+  #topthird * {
+    padding-right: 10px;
+  }
 
-    #tldr {
-        padding-right: 30px;
-    }
+  #tldr {
+    padding-right: 30px;
+  }
 
-    #tldr li{
-        padding: 0px;
-    }
+  #tldr li {
+    padding: 0;
+  }
 
-    #maincontent{
-        padding: 15px;
-    }
+  #maincontent {
+    padding: 15px;
+  }
 
-    #maincontent ul{
-        padding-right: 25px;
-    }
+  #maincontent ul {
+    padding-right: 25px;
+  }
 
-    #audio{
-        margin-right: 15px;
-        padding-bottom:5px;
-    }
-
-    #article-container{
-      padding: 40px;
-    }
+  #article-container {
+    padding: 40px;
+  }
 
 }
